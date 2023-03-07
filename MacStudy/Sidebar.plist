@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>appKit</key>
+		<dict>
+			<key>title</key>
+			<string>AppKit</string>
+		</dict>
+		<key>foundation</key>
+		<dict>
+			<key>title</key>
+			<string>Foundation</string>
+		</dict>
+		<key>mapKit</key>
+		<dict>
+			<key>title</key>
+			<string>MapKit</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>siteMap</key>
+		<dict>
+			<key>title</key>
+			<string>Apple AppKit Document</string>
+		</dict>
+	</dict>
+</array>
+</plist>
