@@ -16,7 +16,7 @@ class SCViewController: SCBaseCodeViewController {
     }
     
     override func exampleCodeView() {
-        contentView.frame = NSRect.init(x: 0, y: 0, width: 130, height: 60)
+        contentView.frame = NSRect.init(x: 0, y: 0, width: 130, height: 70)
         /// start
         /// NSView 's layer is CALayer
         let view = NSView.init(frame: NSRect.init(x: 10, y: 10, width: 50, height: 50))

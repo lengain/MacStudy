@@ -6,12 +6,41 @@
 //
 
 import Cocoa
-
-class SCComboBoxViewController: SCBaseCodeViewController {
+/// title : NSComboBox
+/// description : combo box
+class SCComboBoxViewController: SCBaseCodeViewController, NSComboBoxDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
+    /// start
+    override func exampleCodeView() {
+        let comboBox = NSComboBox(labelWithString: "season")
+        comboBox.delegate = self
+        let seasonArray = ["Spring","Summer","Autumn","Winter"]
+        for season in seasonArray {
+            comboBox.addItem(withObjectValue: season)
+        }
+        
+        contentView.addSubview(comboBox)
+        comboBox.snp.makeConstraints { make in
+            make.centerY.equalTo(contentView.snp.centerY)
+            make.left.equalTo(contentView.snp.left).offset(15)
+            make.width.equalTo(100)
+        }
+    }
     
+    //NSComboBoxDelegate
+    func comboBoxSelectionDidChange(_ notification: Notification) {
+        let sender : NSComboBox = notification.object as! NSComboBox
+        let selectIndex = sender.indexOfSelectedItem
+        print(selectIndex)
+        guard let season : String = sender.objectValueOfSelectedItem as? String else {
+            return
+        }
+        print(season)
+    }
+    /// end
+
 }
