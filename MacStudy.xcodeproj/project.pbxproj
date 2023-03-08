@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		194E0C798449BBA190B12A65 /* AppKit.json in Resources */ = {isa = PBXBuildFile; fileRef = 15BD75E255BF3D2297D2F04C /* AppKit.json */; };
-		258BEB6D84AC49D4C3795369 /* NSView.md in Resources */ = {isa = PBXBuildFile; fileRef = 372F973660552EA17BCEC5DA /* NSView.md */; };
 		330515A5296C0BC400129D51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330515A4296C0BC400129D51 /* AppDelegate.swift */; };
 		330515A7296C0BC400129D51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330515A6296C0BC400129D51 /* ViewController.swift */; };
 		330515AA296C0BC400129D51 /* MacStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 330515A8296C0BC400129D51 /* MacStudy.xcdatamodeld */; };
@@ -36,17 +34,23 @@
 		336BEC0A29ADAACA00F26233 /* Sidebar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 336BEC0929ADAACA00F26233 /* Sidebar.plist */; };
 		337A824229AD9366007AE96B /* SCListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A824129AD9366007AE96B /* SCListViewController.swift */; };
 		337A824429AD9888007AE96B /* SCListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A824329AD9888007AE96B /* SCListItem.swift */; };
+		33C75B4829B81FA800A3010D /* SCImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B4729B81FA800A3010D /* SCImageViewController.swift */; };
+		33C75B4B29B82AE600A3010D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 33C75B4A29B82AE600A3010D /* SDWebImage */; };
 		33F5A70729A48D2500046E5B /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5A70629A48D2500046E5B /* SideBarViewController.swift */; };
 		33F5A70929A49D2F00046E5B /* SideBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5A70829A49D2F00046E5B /* SideBarItem.swift */; };
 		33F5A70C29A4A54E00046E5B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 33F5A70B29A4A54E00046E5B /* SnapKit */; };
 		33F5A70E29A4B5C100046E5B /* SideBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5A70D29A4B5C100046E5B /* SideBarItemView.swift */; };
 		33F5A71229A5E94700046E5B /* LNOutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5A71129A5E94700046E5B /* LNOutlineView.swift */; };
-		4A51892978898E9487D18950 /* NSButton.md in Resources */ = {isa = PBXBuildFile; fileRef = 3D34004ABC2ED1266CD4EAE1 /* NSButton.md */; };
+		6840D57AC01FB8AF73669ECA /* NSView.md in Resources */ = {isa = PBXBuildFile; fileRef = 530CE41F856C569A6BE0FBBA /* NSView.md */; };
+		934A3E08701868564B958365 /* AppKit.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C6CA0B2BED3D79DB7504425 /* AppKit.json */; };
+		965C8CFBB7CF4A2BA0749CEF /* NSImageView.md in Resources */ = {isa = PBXBuildFile; fileRef = 2B6D827041391AECA351CE11 /* NSImageView.md */; };
+		D48D0888B3332DD40A820355 /* NSButton.md in Resources */ = {isa = PBXBuildFile; fileRef = 0614869829B520A4A9A7083D /* NSButton.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		15BD75E255BF3D2297D2F04C /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; path = AppKit.json; sourceTree = "<group>"; };
+		0614869829B520A4A9A7083D /* NSButton.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSButton.md; sourceTree = "<group>"; };
 		28453732AF7AA912690CE6CF /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
+		2B6D827041391AECA351CE11 /* NSImageView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSImageView.md; sourceTree = "<group>"; };
 		330515A1296C0BC400129D51 /* MacStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		330515A4296C0BC400129D51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		330515A6296C0BC400129D51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,12 +76,13 @@
 		336BEC0929ADAACA00F26233 /* Sidebar.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Sidebar.plist; sourceTree = "<group>"; };
 		337A824129AD9366007AE96B /* SCListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCListViewController.swift; sourceTree = "<group>"; };
 		337A824329AD9888007AE96B /* SCListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCListItem.swift; sourceTree = "<group>"; };
+		33C75B4729B81FA800A3010D /* SCImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCImageViewController.swift; sourceTree = "<group>"; };
 		33F5A70629A48D2500046E5B /* SideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		33F5A70829A49D2F00046E5B /* SideBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItem.swift; sourceTree = "<group>"; };
 		33F5A70D29A4B5C100046E5B /* SideBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItemView.swift; sourceTree = "<group>"; };
 		33F5A71129A5E94700046E5B /* LNOutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNOutlineView.swift; sourceTree = "<group>"; };
-		372F973660552EA17BCEC5DA /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSView.md; sourceTree = "<group>"; };
-		3D34004ABC2ED1266CD4EAE1 /* NSButton.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSButton.md; sourceTree = "<group>"; };
+		4C6CA0B2BED3D79DB7504425 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; path = AppKit.json; sourceTree = "<group>"; };
+		530CE41F856C569A6BE0FBBA /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSView.md; sourceTree = "<group>"; };
 		57616C1A7CBD0DCBC22E1792 /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = NSView.md; path = Document/NSView.md; sourceTree = "<group>"; };
 		5EDBBFDB342C960FE75DA3F6 /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = NSView.md; path = Document/NSView.md; sourceTree = "<group>"; };
 		89483E20A27122EA487E45A5 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
@@ -92,6 +97,7 @@
 				332643B729B0A95E00A15C73 /* MAKLayerView in Frameworks */,
 				33F5A70C29A4A54E00046E5B /* SnapKit in Frameworks */,
 				332643B529B0A95E00A15C73 /* MAKAutoLayoutTextView in Frameworks */,
+				33C75B4B29B82AE600A3010D /* SDWebImage in Frameworks */,
 				332643B929B0A95E00A15C73 /* MAKShadowView in Frameworks */,
 				332643C829B1EBDE00A15C73 /* MarkdownUI in Frameworks */,
 				332643D329B1FAFC00A15C73 /* Splash in Frameworks */,
@@ -104,9 +110,10 @@
 		0C97CB1C680C61994EF75B6E /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				15BD75E255BF3D2297D2F04C /* AppKit.json */,
-				3D34004ABC2ED1266CD4EAE1 /* NSButton.md */,
-				372F973660552EA17BCEC5DA /* NSView.md */,
+				2B6D827041391AECA351CE11 /* NSImageView.md */,
+				4C6CA0B2BED3D79DB7504425 /* AppKit.json */,
+				0614869829B520A4A9A7083D /* NSButton.md */,
+				530CE41F856C569A6BE0FBBA /* NSView.md */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -228,6 +235,7 @@
 			children = (
 				33330FE129AC490400632D60 /* SCViewController.swift */,
 				33330FE729AC492D00632D60 /* SCButtonViewController.swift */,
+				33C75B4729B81FA800A3010D /* SCImageViewController.swift */,
 			);
 			path = "AppKit-doc";
 			sourceTree = "<group>";
@@ -255,6 +263,7 @@
 				332643B829B0A95E00A15C73 /* MAKShadowView */,
 				332643C729B1EBDE00A15C73 /* MarkdownUI */,
 				332643D229B1FAFC00A15C73 /* Splash */,
+				33C75B4A29B82AE600A3010D /* SDWebImage */,
 			);
 			productName = MacStudy;
 			productReference = 330515A1296C0BC400129D51 /* MacStudy.app */;
@@ -289,6 +298,7 @@
 				332643B329B0A95E00A15C73 /* XCRemoteSwiftPackageReference "ModernAppKit.git" */,
 				332643C629B1EBDE00A15C73 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
 				332643D129B1FAFC00A15C73 /* XCRemoteSwiftPackageReference "Splash" */,
+				33C75B4929B82AE600A3010D /* XCRemoteSwiftPackageReference "SDWebImage.git" */,
 			);
 			productRefGroup = 330515A2296C0BC400129D51 /* Products */;
 			projectDirPath = "";
@@ -307,9 +317,10 @@
 				330515AC296C0BC500129D51 /* Assets.xcassets in Resources */,
 				336BEC0A29ADAACA00F26233 /* Sidebar.plist in Resources */,
 				330515AF296C0BC500129D51 /* Main.storyboard in Resources */,
-				194E0C798449BBA190B12A65 /* AppKit.json in Resources */,
-				4A51892978898E9487D18950 /* NSButton.md in Resources */,
-				258BEB6D84AC49D4C3795369 /* NSView.md in Resources */,
+				965C8CFBB7CF4A2BA0749CEF /* NSImageView.md in Resources */,
+				934A3E08701868564B958365 /* AppKit.json in Resources */,
+				D48D0888B3332DD40A820355 /* NSButton.md in Resources */,
+				6840D57AC01FB8AF73669ECA /* NSView.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +353,7 @@
 				332643E329B1FD4B00A15C73 /* SystemTool.swift in Sources */,
 				332643E529B1FD4B00A15C73 /* SplashCodeSyntaxHighlighter.swift in Sources */,
 				332643E829B1FD4B00A15C73 /* SCBaseCodeViewController.swift in Sources */,
+				33C75B4829B81FA800A3010D /* SCImageViewController.swift in Sources */,
 				33330FDC29A8B87800632D60 /* SCListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,7 +499,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MacStudy/Info.plist;
-				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "$(MARKETING_VERSION)";
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = 1.0;
 				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = asfd;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -520,7 +532,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MacStudy/Info.plist;
-				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "$(MARKETING_VERSION)";
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = 1.0;
 				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = asfd;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -587,6 +599,14 @@
 				minimumVersion = 0.9.0;
 			};
 		};
+		33C75B4929B82AE600A3010D /* XCRemoteSwiftPackageReference "SDWebImage.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		33F5A70A29A4A54E00046E5B /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -622,6 +642,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 332643D129B1FAFC00A15C73 /* XCRemoteSwiftPackageReference "Splash" */;
 			productName = Splash;
+		};
+		33C75B4A29B82AE600A3010D /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33C75B4929B82AE600A3010D /* XCRemoteSwiftPackageReference "SDWebImage.git" */;
+			productName = SDWebImage;
 		};
 		33F5A70B29A4A54E00046E5B /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
