@@ -17,7 +17,7 @@ class SCButtonViewController: SCBaseCodeViewController {
     }
     
     /// start
-    override func codeView() -> NSView? {
+    override func exampleCodeView() -> NSView? {
         contentView.frame = NSRect.init(x: 0, y: 0, width:  300, height: 150)
         let buttonSize = NSSize.init(width: 90.0, height: 25.0)
       
@@ -115,7 +115,7 @@ extension SCButtonViewController : NSComboBoxDelegate {
         subViews.forEach { subview in
             subview.removeFromSuperview()
         }
-        _ = codeView()
+        _ = exampleCodeView()
     }
     
     @objc private func showBordered(_ sender : NSButton) {

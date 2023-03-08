@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CC1093CB29B14ACA4C98681 /* AppKit.json in Resources */ = {isa = PBXBuildFile; fileRef = 55EB51C6031591E74FD7D90F /* AppKit.json */; };
 		330515A5296C0BC400129D51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330515A4296C0BC400129D51 /* AppDelegate.swift */; };
 		330515A7296C0BC400129D51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330515A6296C0BC400129D51 /* ViewController.swift */; };
 		330515AA296C0BC400129D51 /* MacStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 330515A8296C0BC400129D51 /* MacStudy.xcdatamodeld */; };
@@ -36,21 +37,44 @@
 		337A824429AD9888007AE96B /* SCListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A824329AD9888007AE96B /* SCListItem.swift */; };
 		33C75B4829B81FA800A3010D /* SCImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B4729B81FA800A3010D /* SCImageViewController.swift */; };
 		33C75B4B29B82AE600A3010D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 33C75B4A29B82AE600A3010D /* SDWebImage */; };
+		33C75B5129B85AE700A3010D /* SCTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B5029B85AE700A3010D /* SCTextFieldViewController.swift */; };
+		33C75B5729B85B1400A3010D /* SCTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B5629B85B1400A3010D /* SCTextViewController.swift */; };
+		33C75B5D29B85B3A00A3010D /* SCSearchFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B5C29B85B3A00A3010D /* SCSearchFieldViewController.swift */; };
+		33C75B6529B85BD800A3010D /* SCSegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B6429B85BD800A3010D /* SCSegmentedControlViewController.swift */; };
+		33C75B6729B85BF800A3010D /* SCComboBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B6629B85BF800A3010D /* SCComboBoxViewController.swift */; };
+		33C75B6929B85C1900A3010D /* SCPopupButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B6829B85C1900A3010D /* SCPopupButtonViewController.swift */; };
+		33C75B6B29B85C2F00A3010D /* SCSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B6A29B85C2F00A3010D /* SCSliderViewController.swift */; };
+		33C75B7129B85C5300A3010D /* SCDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B7029B85C5300A3010D /* SCDatePickerViewController.swift */; };
+		33C75B7729B85C8100A3010D /* SCStepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B7629B85C8100A3010D /* SCStepperViewController.swift */; };
+		33C75B7929B85C9500A3010D /* SCProgreddIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B7829B85C9500A3010D /* SCProgreddIndicatorViewController.swift */; };
+		33C75B7F29B85CCC00A3010D /* SCBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B7E29B85CCC00A3010D /* SCBoxViewController.swift */; };
+		33C75B8129B85CE100A3010D /* SCSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B8029B85CE100A3010D /* SCSplitViewController.swift */; };
+		33C75B8329B85D0D00A3010D /* SCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B8229B85D0D00A3010D /* SCCollectionViewController.swift */; };
+		33C75B8929B85D3C00A3010D /* SCTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B8829B85D3C00A3010D /* SCTabViewController.swift */; };
+		33C75B8F29B85D6900A3010D /* SCPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B8E29B85D6900A3010D /* SCPopoverViewController.swift */; };
+		33C75B9129B85D9100A3010D /* SCPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B9029B85D9100A3010D /* SCPanelViewController.swift */; };
+		33C75B9329B85D9F00A3010D /* SCAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B9229B85D9F00A3010D /* SCAlertViewController.swift */; };
+		33C75B9529B85DCC00A3010D /* SCToolbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B9429B85DCC00A3010D /* SCToolbarViewController.swift */; };
+		33C75B9729B85DDB00A3010D /* SCMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B9629B85DDB00A3010D /* SCMenuController.swift */; };
+		33C75B9929B85DEB00A3010D /* SCStatusBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B9829B85DEB00A3010D /* SCStatusBarViewController.swift */; };
+		33C75B9B29B85E0300A3010D /* SCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B9A29B85E0300A3010D /* SCTableViewController.swift */; };
+		33C75B9D29B85E1500A3010D /* SCOutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B9C29B85E1500A3010D /* SCOutlineViewController.swift */; };
+		33C75B9F29B85E3100A3010D /* SCStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B9E29B85E3100A3010D /* SCStackViewController.swift */; };
 		33F5A70729A48D2500046E5B /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5A70629A48D2500046E5B /* SideBarViewController.swift */; };
 		33F5A70929A49D2F00046E5B /* SideBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5A70829A49D2F00046E5B /* SideBarItem.swift */; };
 		33F5A70C29A4A54E00046E5B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 33F5A70B29A4A54E00046E5B /* SnapKit */; };
 		33F5A70E29A4B5C100046E5B /* SideBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5A70D29A4B5C100046E5B /* SideBarItemView.swift */; };
 		33F5A71229A5E94700046E5B /* LNOutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5A71129A5E94700046E5B /* LNOutlineView.swift */; };
-		6840D57AC01FB8AF73669ECA /* NSView.md in Resources */ = {isa = PBXBuildFile; fileRef = 530CE41F856C569A6BE0FBBA /* NSView.md */; };
-		934A3E08701868564B958365 /* AppKit.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C6CA0B2BED3D79DB7504425 /* AppKit.json */; };
-		965C8CFBB7CF4A2BA0749CEF /* NSImageView.md in Resources */ = {isa = PBXBuildFile; fileRef = 2B6D827041391AECA351CE11 /* NSImageView.md */; };
-		D48D0888B3332DD40A820355 /* NSButton.md in Resources */ = {isa = PBXBuildFile; fileRef = 0614869829B520A4A9A7083D /* NSButton.md */; };
+		35A985B53E948B60D311126A /* NSView.md in Resources */ = {isa = PBXBuildFile; fileRef = 1FF02FC8E2357C97834794AC /* NSView.md */; };
+		4614C90BA57DD8E12253F9F6 /* NSButton.md in Resources */ = {isa = PBXBuildFile; fileRef = B9DDAE09DB2554A4EE7E4039 /* NSButton.md */; };
+		8F59D0CBD7B5CE2E9A7D1AE5 /* NSTextField.md in Resources */ = {isa = PBXBuildFile; fileRef = C8C7D75CB2999C99BB486D11 /* NSTextField.md */; };
+		A98867875D6C65534D8DBA27 /* NSImageView.md in Resources */ = {isa = PBXBuildFile; fileRef = 16165F7483529AE0C33BEB6A /* NSImageView.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0614869829B520A4A9A7083D /* NSButton.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSButton.md; sourceTree = "<group>"; };
+		16165F7483529AE0C33BEB6A /* NSImageView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSImageView.md; sourceTree = "<group>"; };
+		1FF02FC8E2357C97834794AC /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSView.md; sourceTree = "<group>"; };
 		28453732AF7AA912690CE6CF /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
-		2B6D827041391AECA351CE11 /* NSImageView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSImageView.md; sourceTree = "<group>"; };
 		330515A1296C0BC400129D51 /* MacStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		330515A4296C0BC400129D51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		330515A6296C0BC400129D51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,15 +101,39 @@
 		337A824129AD9366007AE96B /* SCListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCListViewController.swift; sourceTree = "<group>"; };
 		337A824329AD9888007AE96B /* SCListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCListItem.swift; sourceTree = "<group>"; };
 		33C75B4729B81FA800A3010D /* SCImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCImageViewController.swift; sourceTree = "<group>"; };
+		33C75B5029B85AE700A3010D /* SCTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTextFieldViewController.swift; sourceTree = "<group>"; };
+		33C75B5629B85B1400A3010D /* SCTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTextViewController.swift; sourceTree = "<group>"; };
+		33C75B5C29B85B3A00A3010D /* SCSearchFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSearchFieldViewController.swift; sourceTree = "<group>"; };
+		33C75B6429B85BD800A3010D /* SCSegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSegmentedControlViewController.swift; sourceTree = "<group>"; };
+		33C75B6629B85BF800A3010D /* SCComboBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCComboBoxViewController.swift; sourceTree = "<group>"; };
+		33C75B6829B85C1900A3010D /* SCPopupButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPopupButtonViewController.swift; sourceTree = "<group>"; };
+		33C75B6A29B85C2F00A3010D /* SCSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSliderViewController.swift; sourceTree = "<group>"; };
+		33C75B7029B85C5300A3010D /* SCDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDatePickerViewController.swift; sourceTree = "<group>"; };
+		33C75B7629B85C8100A3010D /* SCStepperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStepperViewController.swift; sourceTree = "<group>"; };
+		33C75B7829B85C9500A3010D /* SCProgreddIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProgreddIndicatorViewController.swift; sourceTree = "<group>"; };
+		33C75B7E29B85CCC00A3010D /* SCBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCBoxViewController.swift; sourceTree = "<group>"; };
+		33C75B8029B85CE100A3010D /* SCSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSplitViewController.swift; sourceTree = "<group>"; };
+		33C75B8229B85D0D00A3010D /* SCCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCollectionViewController.swift; sourceTree = "<group>"; };
+		33C75B8829B85D3C00A3010D /* SCTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTabViewController.swift; sourceTree = "<group>"; };
+		33C75B8E29B85D6900A3010D /* SCPopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPopoverViewController.swift; sourceTree = "<group>"; };
+		33C75B9029B85D9100A3010D /* SCPanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPanelViewController.swift; sourceTree = "<group>"; };
+		33C75B9229B85D9F00A3010D /* SCAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCAlertViewController.swift; sourceTree = "<group>"; };
+		33C75B9429B85DCC00A3010D /* SCToolbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCToolbarViewController.swift; sourceTree = "<group>"; };
+		33C75B9629B85DDB00A3010D /* SCMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMenuController.swift; sourceTree = "<group>"; };
+		33C75B9829B85DEB00A3010D /* SCStatusBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStatusBarViewController.swift; sourceTree = "<group>"; };
+		33C75B9A29B85E0300A3010D /* SCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTableViewController.swift; sourceTree = "<group>"; };
+		33C75B9C29B85E1500A3010D /* SCOutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCOutlineViewController.swift; sourceTree = "<group>"; };
+		33C75B9E29B85E3100A3010D /* SCStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStackViewController.swift; sourceTree = "<group>"; };
 		33F5A70629A48D2500046E5B /* SideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		33F5A70829A49D2F00046E5B /* SideBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItem.swift; sourceTree = "<group>"; };
 		33F5A70D29A4B5C100046E5B /* SideBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItemView.swift; sourceTree = "<group>"; };
 		33F5A71129A5E94700046E5B /* LNOutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNOutlineView.swift; sourceTree = "<group>"; };
-		4C6CA0B2BED3D79DB7504425 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; path = AppKit.json; sourceTree = "<group>"; };
-		530CE41F856C569A6BE0FBBA /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSView.md; sourceTree = "<group>"; };
+		55EB51C6031591E74FD7D90F /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; path = AppKit.json; sourceTree = "<group>"; };
 		57616C1A7CBD0DCBC22E1792 /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = NSView.md; path = Document/NSView.md; sourceTree = "<group>"; };
 		5EDBBFDB342C960FE75DA3F6 /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = NSView.md; path = Document/NSView.md; sourceTree = "<group>"; };
 		89483E20A27122EA487E45A5 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
+		B9DDAE09DB2554A4EE7E4039 /* NSButton.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSButton.md; sourceTree = "<group>"; };
+		C8C7D75CB2999C99BB486D11 /* NSTextField.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSTextField.md; sourceTree = "<group>"; };
 		D02FA8BC31F7F106212CE3A4 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,10 +158,11 @@
 		0C97CB1C680C61994EF75B6E /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				2B6D827041391AECA351CE11 /* NSImageView.md */,
-				4C6CA0B2BED3D79DB7504425 /* AppKit.json */,
-				0614869829B520A4A9A7083D /* NSButton.md */,
-				530CE41F856C569A6BE0FBBA /* NSView.md */,
+				16165F7483529AE0C33BEB6A /* NSImageView.md */,
+				55EB51C6031591E74FD7D90F /* AppKit.json */,
+				B9DDAE09DB2554A4EE7E4039 /* NSButton.md */,
+				C8C7D75CB2999C99BB486D11 /* NSTextField.md */,
+				1FF02FC8E2357C97834794AC /* NSView.md */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -236,6 +285,29 @@
 				33330FE129AC490400632D60 /* SCViewController.swift */,
 				33330FE729AC492D00632D60 /* SCButtonViewController.swift */,
 				33C75B4729B81FA800A3010D /* SCImageViewController.swift */,
+				33C75B5029B85AE700A3010D /* SCTextFieldViewController.swift */,
+				33C75B5629B85B1400A3010D /* SCTextViewController.swift */,
+				33C75B5C29B85B3A00A3010D /* SCSearchFieldViewController.swift */,
+				33C75B6429B85BD800A3010D /* SCSegmentedControlViewController.swift */,
+				33C75B6629B85BF800A3010D /* SCComboBoxViewController.swift */,
+				33C75B6829B85C1900A3010D /* SCPopupButtonViewController.swift */,
+				33C75B6A29B85C2F00A3010D /* SCSliderViewController.swift */,
+				33C75B7029B85C5300A3010D /* SCDatePickerViewController.swift */,
+				33C75B7629B85C8100A3010D /* SCStepperViewController.swift */,
+				33C75B7829B85C9500A3010D /* SCProgreddIndicatorViewController.swift */,
+				33C75B7E29B85CCC00A3010D /* SCBoxViewController.swift */,
+				33C75B8029B85CE100A3010D /* SCSplitViewController.swift */,
+				33C75B8229B85D0D00A3010D /* SCCollectionViewController.swift */,
+				33C75B8829B85D3C00A3010D /* SCTabViewController.swift */,
+				33C75B8E29B85D6900A3010D /* SCPopoverViewController.swift */,
+				33C75B9029B85D9100A3010D /* SCPanelViewController.swift */,
+				33C75B9229B85D9F00A3010D /* SCAlertViewController.swift */,
+				33C75B9429B85DCC00A3010D /* SCToolbarViewController.swift */,
+				33C75B9629B85DDB00A3010D /* SCMenuController.swift */,
+				33C75B9829B85DEB00A3010D /* SCStatusBarViewController.swift */,
+				33C75B9A29B85E0300A3010D /* SCTableViewController.swift */,
+				33C75B9C29B85E1500A3010D /* SCOutlineViewController.swift */,
+				33C75B9E29B85E3100A3010D /* SCStackViewController.swift */,
 			);
 			path = "AppKit-doc";
 			sourceTree = "<group>";
@@ -317,10 +389,11 @@
 				330515AC296C0BC500129D51 /* Assets.xcassets in Resources */,
 				336BEC0A29ADAACA00F26233 /* Sidebar.plist in Resources */,
 				330515AF296C0BC500129D51 /* Main.storyboard in Resources */,
-				965C8CFBB7CF4A2BA0749CEF /* NSImageView.md in Resources */,
-				934A3E08701868564B958365 /* AppKit.json in Resources */,
-				D48D0888B3332DD40A820355 /* NSButton.md in Resources */,
-				6840D57AC01FB8AF73669ECA /* NSView.md in Resources */,
+				A98867875D6C65534D8DBA27 /* NSImageView.md in Resources */,
+				1CC1093CB29B14ACA4C98681 /* AppKit.json in Resources */,
+				4614C90BA57DD8E12253F9F6 /* NSButton.md in Resources */,
+				8F59D0CBD7B5CE2E9A7D1AE5 /* NSTextField.md in Resources */,
+				35A985B53E948B60D311126A /* NSView.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,29 +405,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				337A824429AD9888007AE96B /* SCListItem.swift in Sources */,
+				33C75B9129B85D9100A3010D /* SCPanelViewController.swift in Sources */,
 				330515AA296C0BC400129D51 /* MacStudy.xcdatamodeld in Sources */,
+				33C75B7129B85C5300A3010D /* SCDatePickerViewController.swift in Sources */,
 				332643E729B1FD4B00A15C73 /* MarkdownBaseView.swift in Sources */,
+				33C75B6729B85BF800A3010D /* SCComboBoxViewController.swift in Sources */,
 				330515A7296C0BC400129D51 /* ViewController.swift in Sources */,
 				332643E429B1FD4B00A15C73 /* TextOutputFormat.swift in Sources */,
 				332643F329B5D4D800A15C73 /* SCHostingView.swift in Sources */,
+				33C75B8F29B85D6900A3010D /* SCPopoverViewController.swift in Sources */,
 				332643EF29B5C21600A15C73 /* ConstHeader.swift in Sources */,
+				33C75B9B29B85E0300A3010D /* SCTableViewController.swift in Sources */,
 				33F5A70E29A4B5C100046E5B /* SideBarItemView.swift in Sources */,
+				33C75B9529B85DCC00A3010D /* SCToolbarViewController.swift in Sources */,
 				33330FE229AC490400632D60 /* SCViewController.swift in Sources */,
+				33C75B5129B85AE700A3010D /* SCTextFieldViewController.swift in Sources */,
 				33330FE829AC492D00632D60 /* SCButtonViewController.swift in Sources */,
+				33C75B9F29B85E3100A3010D /* SCStackViewController.swift in Sources */,
 				332643C129B1CA8E00A15C73 /* SCPageViewController.swift in Sources */,
 				332643C529B1E83600A15C73 /* SCCodeViewController.swift in Sources */,
 				33F5A71229A5E94700046E5B /* LNOutlineView.swift in Sources */,
+				33C75B6B29B85C2F00A3010D /* SCSliderViewController.swift in Sources */,
 				330515A5296C0BC400129D51 /* AppDelegate.swift in Sources */,
+				33C75B7729B85C8100A3010D /* SCStepperViewController.swift in Sources */,
 				332643E629B1FD4B00A15C73 /* MarkdownView.swift in Sources */,
+				33C75B9729B85DDB00A3010D /* SCMenuController.swift in Sources */,
 				332643E229B1FD4B00A15C73 /* SCAutoLayoutTextView.swift in Sources */,
+				33C75B9329B85D9F00A3010D /* SCAlertViewController.swift in Sources */,
+				33C75B7F29B85CCC00A3010D /* SCBoxViewController.swift in Sources */,
+				33C75B6929B85C1900A3010D /* SCPopupButtonViewController.swift in Sources */,
+				33C75B8129B85CE100A3010D /* SCSplitViewController.swift in Sources */,
 				33F5A70729A48D2500046E5B /* SideBarViewController.swift in Sources */,
 				33F5A70929A49D2F00046E5B /* SideBarItem.swift in Sources */,
+				33C75B5729B85B1400A3010D /* SCTextViewController.swift in Sources */,
 				337A824229AD9366007AE96B /* SCListViewController.swift in Sources */,
+				33C75B9D29B85E1500A3010D /* SCOutlineViewController.swift in Sources */,
+				33C75B7929B85C9500A3010D /* SCProgreddIndicatorViewController.swift in Sources */,
 				332643E329B1FD4B00A15C73 /* SystemTool.swift in Sources */,
 				332643E529B1FD4B00A15C73 /* SplashCodeSyntaxHighlighter.swift in Sources */,
+				33C75B8329B85D0D00A3010D /* SCCollectionViewController.swift in Sources */,
+				33C75B9929B85DEB00A3010D /* SCStatusBarViewController.swift in Sources */,
 				332643E829B1FD4B00A15C73 /* SCBaseCodeViewController.swift in Sources */,
 				33C75B4829B81FA800A3010D /* SCImageViewController.swift in Sources */,
 				33330FDC29A8B87800632D60 /* SCListTableViewCell.swift in Sources */,
+				33C75B8929B85D3C00A3010D /* SCTabViewController.swift in Sources */,
+				33C75B5D29B85B3A00A3010D /* SCSearchFieldViewController.swift in Sources */,
+				33C75B6529B85BD800A3010D /* SCSegmentedControlViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

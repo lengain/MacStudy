@@ -23,7 +23,7 @@ class SCBaseCodeViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-        guard let codeView = codeView() else { return }
+        guard let codeView = exampleCodeView() else { return }
         let size = codeView.frame.size
         view.addSubview(codeView)
         codeView.snp.makeConstraints { make in
@@ -36,7 +36,7 @@ class SCBaseCodeViewController: NSViewController {
     }
     
     @discardableResult
-    func codeView() -> NSView? {
+    func exampleCodeView() -> NSView? {
         return nil
     }
     

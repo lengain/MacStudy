@@ -8,7 +8,7 @@
 import Cocoa
 import SDWebImage
 /// title : NSImageView
-/// description : show image, url
+/// description : load image, image url, image aspect to fill
 class SCImageViewController: SCBaseCodeViewController {
 
     override func viewDidLoad() {
@@ -17,7 +17,7 @@ class SCImageViewController: SCBaseCodeViewController {
         attachPropertySetting()
     }
     
-    override func codeView() -> NSView? {
+    override func exampleCodeView() -> NSView? {
         contentView.frame = NSRect.init(x: 10, y: 10, width: 200, height: 200)
         /// start
         
