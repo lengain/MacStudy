@@ -23,10 +23,10 @@ class SCBaseCodeViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-        guard let codeView = exampleCodeView() else { return }
-        let size = codeView.frame.size
-        view.addSubview(codeView)
-        codeView.snp.makeConstraints { make in
+        exampleCodeView()
+        let size = contentView.frame.size
+        view.addSubview(contentView)
+        contentView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(kTitlebarHeight + padding16)
             make.left.equalToSuperview().offset(padding16)
             make.bottom.equalToSuperview().offset(-padding16)
@@ -35,9 +35,8 @@ class SCBaseCodeViewController: NSViewController {
         }
     }
     
-    @discardableResult
-    func exampleCodeView() -> NSView? {
-        return nil
+    func exampleCodeView() {
+
     }
     
 }

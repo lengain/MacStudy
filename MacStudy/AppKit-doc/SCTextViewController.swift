@@ -6,12 +6,38 @@
 //
 
 import Cocoa
-
-class SCTextViewController: SCBaseCodeViewController {
+/// title : NSTextView
+/// description :  huge text input
+class SCTextViewController: SCBaseCodeViewController , NSTextViewDelegate {
 
     override func viewDidLoad() {
+        contentView.frame = NSRect.init(x: 10, y: 10, width: 300, height: 200)
+        
         super.viewDidLoad()
         // Do view setup here.
     }
     
+    /// start
+    override func exampleCodeView() {
+        
+        let textView = NSTextView(frame: NSRect.init(x: 10, y: 10, width: 280, height: 180))
+        textView.delegate = self
+        textView.backgroundColor = .windowBackgroundColor
+        contentView.addSubview(textView)
+    }
+    
+    // NSTextViewDelegate
+    func textShouldBeginEditing(_ textObject: NSText) -> Bool {
+        return true
+    }
+    
+    func textShouldEndEditing(_ textObject: NSText) -> Bool {
+        return true
+    }
+    
+    func textDidChange(_ notification: Notification) {
+        
+    }
+    
+    /// end
 }

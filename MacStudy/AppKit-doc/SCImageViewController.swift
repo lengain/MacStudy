@@ -17,7 +17,7 @@ class SCImageViewController: SCBaseCodeViewController {
         attachPropertySetting()
     }
     
-    override func exampleCodeView() -> NSView? {
+    override func exampleCodeView() {
         contentView.frame = NSRect.init(x: 10, y: 10, width: 200, height: 200)
         /// start
         
@@ -35,7 +35,6 @@ class SCImageViewController: SCBaseCodeViewController {
     
         contentView.addSubview(leftImageView)
         contentView.addSubview(rightImageView)
-        return contentView
     }
     
 }

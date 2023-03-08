@@ -17,7 +17,7 @@ class SCTextFieldViewController: SCBaseCodeViewController, NSTextFieldDelegate {
     }
     
     /// start
-    override func exampleCodeView() -> NSView? {
+    override func exampleCodeView() {
     
         /// label : non-wrapping, non-editable, non-selectable text field
         let userNameLabel = NSTextField.init(labelWithString: "Account:")
@@ -55,7 +55,6 @@ class SCTextFieldViewController: SCBaseCodeViewController, NSTextFieldDelegate {
         contentView.addSubview(userNameTextField)
         contentView.addSubview(passwordTextField)
         
-        return contentView
     }
     
     // NSTextFieldDelegate

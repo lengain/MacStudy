@@ -17,7 +17,7 @@ class SCButtonViewController: SCBaseCodeViewController {
     }
     
     /// start
-    override func exampleCodeView() -> NSView? {
+    override func exampleCodeView() {
         contentView.frame = NSRect.init(x: 0, y: 0, width:  300, height: 150)
         let buttonSize = NSSize.init(width: 90.0, height: 25.0)
       
@@ -32,7 +32,6 @@ class SCButtonViewController: SCBaseCodeViewController {
             contentView.addSubview(button)
         }
         
-        return contentView
     }
     
     @objc private func click(_ sender : NSButton) {

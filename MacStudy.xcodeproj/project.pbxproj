@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CC1093CB29B14ACA4C98681 /* AppKit.json in Resources */ = {isa = PBXBuildFile; fileRef = 55EB51C6031591E74FD7D90F /* AppKit.json */; };
+		10BB07A3473F11EAFAF50B4A /* NSView.md in Resources */ = {isa = PBXBuildFile; fileRef = 312A805746C09875C68AEC2A /* NSView.md */; };
+		16C3D3D7053EAAE2C7BD7568 /* NSTextView.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8775A27EB42B817EC5585E /* NSTextView.md */; };
 		330515A5296C0BC400129D51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330515A4296C0BC400129D51 /* AppDelegate.swift */; };
 		330515A7296C0BC400129D51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330515A6296C0BC400129D51 /* ViewController.swift */; };
 		330515AA296C0BC400129D51 /* MacStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 330515A8296C0BC400129D51 /* MacStudy.xcdatamodeld */; };
@@ -65,16 +66,16 @@
 		33F5A70C29A4A54E00046E5B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 33F5A70B29A4A54E00046E5B /* SnapKit */; };
 		33F5A70E29A4B5C100046E5B /* SideBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5A70D29A4B5C100046E5B /* SideBarItemView.swift */; };
 		33F5A71229A5E94700046E5B /* LNOutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5A71129A5E94700046E5B /* LNOutlineView.swift */; };
-		35A985B53E948B60D311126A /* NSView.md in Resources */ = {isa = PBXBuildFile; fileRef = 1FF02FC8E2357C97834794AC /* NSView.md */; };
-		4614C90BA57DD8E12253F9F6 /* NSButton.md in Resources */ = {isa = PBXBuildFile; fileRef = B9DDAE09DB2554A4EE7E4039 /* NSButton.md */; };
-		8F59D0CBD7B5CE2E9A7D1AE5 /* NSTextField.md in Resources */ = {isa = PBXBuildFile; fileRef = C8C7D75CB2999C99BB486D11 /* NSTextField.md */; };
-		A98867875D6C65534D8DBA27 /* NSImageView.md in Resources */ = {isa = PBXBuildFile; fileRef = 16165F7483529AE0C33BEB6A /* NSImageView.md */; };
+		8C45CCA3EF51AD05BB99EFC9 /* NSButton.md in Resources */ = {isa = PBXBuildFile; fileRef = A822DF64BDF1A7BF677CCFA9 /* NSButton.md */; };
+		9F91FBEBAD35C0FADF39AC6B /* AppKit.json in Resources */ = {isa = PBXBuildFile; fileRef = ABD44827A59254A367BAF822 /* AppKit.json */; };
+		A603BAF48AA07D97CF4D89D1 /* NSImageView.md in Resources */ = {isa = PBXBuildFile; fileRef = 65EC814DD2E3F79FAE98FF61 /* NSImageView.md */; };
+		FE6676C1818D616A40D975C8 /* NSTextField.md in Resources */ = {isa = PBXBuildFile; fileRef = 7A4B3B589C939CEE7881BAF5 /* NSTextField.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		16165F7483529AE0C33BEB6A /* NSImageView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSImageView.md; sourceTree = "<group>"; };
-		1FF02FC8E2357C97834794AC /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSView.md; sourceTree = "<group>"; };
 		28453732AF7AA912690CE6CF /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
+		2E8775A27EB42B817EC5585E /* NSTextView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSTextView.md; sourceTree = "<group>"; };
+		312A805746C09875C68AEC2A /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSView.md; sourceTree = "<group>"; };
 		330515A1296C0BC400129D51 /* MacStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		330515A4296C0BC400129D51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		330515A6296C0BC400129D51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,12 +129,13 @@
 		33F5A70829A49D2F00046E5B /* SideBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItem.swift; sourceTree = "<group>"; };
 		33F5A70D29A4B5C100046E5B /* SideBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItemView.swift; sourceTree = "<group>"; };
 		33F5A71129A5E94700046E5B /* LNOutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNOutlineView.swift; sourceTree = "<group>"; };
-		55EB51C6031591E74FD7D90F /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; path = AppKit.json; sourceTree = "<group>"; };
 		57616C1A7CBD0DCBC22E1792 /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = NSView.md; path = Document/NSView.md; sourceTree = "<group>"; };
 		5EDBBFDB342C960FE75DA3F6 /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = NSView.md; path = Document/NSView.md; sourceTree = "<group>"; };
+		65EC814DD2E3F79FAE98FF61 /* NSImageView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSImageView.md; sourceTree = "<group>"; };
+		7A4B3B589C939CEE7881BAF5 /* NSTextField.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSTextField.md; sourceTree = "<group>"; };
 		89483E20A27122EA487E45A5 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
-		B9DDAE09DB2554A4EE7E4039 /* NSButton.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSButton.md; sourceTree = "<group>"; };
-		C8C7D75CB2999C99BB486D11 /* NSTextField.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSTextField.md; sourceTree = "<group>"; };
+		A822DF64BDF1A7BF677CCFA9 /* NSButton.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSButton.md; sourceTree = "<group>"; };
+		ABD44827A59254A367BAF822 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; path = AppKit.json; sourceTree = "<group>"; };
 		D02FA8BC31F7F106212CE3A4 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,11 +160,12 @@
 		0C97CB1C680C61994EF75B6E /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				16165F7483529AE0C33BEB6A /* NSImageView.md */,
-				55EB51C6031591E74FD7D90F /* AppKit.json */,
-				B9DDAE09DB2554A4EE7E4039 /* NSButton.md */,
-				C8C7D75CB2999C99BB486D11 /* NSTextField.md */,
-				1FF02FC8E2357C97834794AC /* NSView.md */,
+				2E8775A27EB42B817EC5585E /* NSTextView.md */,
+				65EC814DD2E3F79FAE98FF61 /* NSImageView.md */,
+				ABD44827A59254A367BAF822 /* AppKit.json */,
+				A822DF64BDF1A7BF677CCFA9 /* NSButton.md */,
+				7A4B3B589C939CEE7881BAF5 /* NSTextField.md */,
+				312A805746C09875C68AEC2A /* NSView.md */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -389,11 +392,12 @@
 				330515AC296C0BC500129D51 /* Assets.xcassets in Resources */,
 				336BEC0A29ADAACA00F26233 /* Sidebar.plist in Resources */,
 				330515AF296C0BC500129D51 /* Main.storyboard in Resources */,
-				A98867875D6C65534D8DBA27 /* NSImageView.md in Resources */,
-				1CC1093CB29B14ACA4C98681 /* AppKit.json in Resources */,
-				4614C90BA57DD8E12253F9F6 /* NSButton.md in Resources */,
-				8F59D0CBD7B5CE2E9A7D1AE5 /* NSTextField.md in Resources */,
-				35A985B53E948B60D311126A /* NSView.md in Resources */,
+				16C3D3D7053EAAE2C7BD7568 /* NSTextView.md in Resources */,
+				A603BAF48AA07D97CF4D89D1 /* NSImageView.md in Resources */,
+				9F91FBEBAD35C0FADF39AC6B /* AppKit.json in Resources */,
+				8C45CCA3EF51AD05BB99EFC9 /* NSButton.md in Resources */,
+				FE6676C1818D616A40D975C8 /* NSTextField.md in Resources */,
+				10BB07A3473F11EAFAF50B4A /* NSView.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

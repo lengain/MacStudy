@@ -39,7 +39,7 @@ class DocumentGenerator
   def initialize
     super
     @project_path = search_proj
-    @project_name = __dir__.split('/').last
+    @project_name = "MacStudy"
     @document_dir = __dir__ + '/' + @project_name + '/' + 'Documents'
     Dir::mkdir(@document_dir) if !Dir::exist?(@document_dir)
     @project = Xcodeproj::Project.open(@project_path)
