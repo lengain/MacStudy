@@ -20,11 +20,6 @@ class SCImageViewController: SCBaseCodeViewController {
     override func codeView() -> NSView? {
         contentView.frame = NSRect.init(x: 10, y: 10, width: 200, height: 200)
         /// start
-
-        // There is no function in Cocoa
-        // that you can change the contentMode
-        // of UIImageView to zoom an image in iOS
-        // So, you need code by yourself
         
         // load image from assets
         let leftImageView = NSImageView(frame: NSRect.init(x: 10, y: 40, width: 80, height: 80))
@@ -92,6 +87,21 @@ extension SCImageViewController : NSComboBoxDelegate {
             make.width.equalTo(200)
         }
         frameStyleComboBox.tag = 2
+        
+        let aspectToFillButton = NSButton(title: "aspectToFill", target: self, action: #selector(SCImageViewController.aspectToFillAction(_:)))
+        view.addSubview(aspectToFillButton)
+        aspectToFillButton.snp.makeConstraints { make in
+            make.top.equalTo(frameStyleComboBox.snp.bottom).offset(15)
+            make.left.equalTo(self.contentView.snp.right).offset(15)
+        }
+    }
+    
+    @objc private func aspectToFillAction(_ sender : NSButton) {
+        for view in contentView.subviews {
+            if let imageView : NSImageView = view as? NSImageView {
+                imageView.aspectToFill()
+            }
+        }
     }
     
     func comboBoxSelectionDidChange(_ notification: Notification) {
@@ -185,5 +195,49 @@ extension NSImageView.FrameStyle {
         @unknown default:
             return "none"
         }
+    }
+}
+
+extension NSImageView {
+    
+    /// There is no function in Cocoa that you can change the contentMode of UIImageView to zoom an image in iOS
+    /// So, you need code by yourself
+    func aspectToFill() {
+        guard let sourceImage = image else {return}
+        self.image = sourceImage.resizeImage(self.frame.size)
+    }
+}
+
+extension NSImage {
+    public func resizeImage(_ size: NSSize) -> NSImage {
+        let targetFrame = NSRect(origin: CGPoint(x: 0, y: 0), size: size);
+        let targetImage = NSImage(size: size)
+        let selfSize = self.size
+        let ratioHeight = size.height / selfSize.height
+        let ratioWidth = size.width / selfSize.width
+        var cropRect = NSZeroRect
+        if ratioHeight >= ratioWidth {
+            cropRect.size.width = floor (size.width / ratioHeight)
+            cropRect.size.height = selfSize.height
+        } else {
+            cropRect.size.width = selfSize.width
+            cropRect.size.height = floor(size.height / ratioWidth)
+        }
+        
+        cropRect.origin.x = floor((selfSize.width - cropRect.size.width) / 2)
+        cropRect.origin.y = floor((selfSize.height - cropRect.size.height) / 2)
+        
+        targetImage.lockFocus()
+        self.draw(in: targetFrame,
+                  from: cropRect,
+                  operation: .copy,
+                  fraction: 1.0,
+                  respectFlipped: true,
+                  hints: [
+                    NSImageRep.HintKey.interpolation : NSImageInterpolation.low.rawValue
+                  ])
+        
+        targetImage.unlockFocus()
+        return targetImage
     }
 }
