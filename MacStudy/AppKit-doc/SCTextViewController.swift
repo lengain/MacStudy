@@ -28,10 +28,12 @@ class SCTextViewController: SCBaseCodeViewController , NSTextViewDelegate {
     
     // NSTextViewDelegate
     func textShouldBeginEditing(_ textObject: NSText) -> Bool {
+        print(#function)
         return true
     }
     
     func textShouldEndEditing(_ textObject: NSText) -> Bool {
+        print(#function)
         return true
     }
     

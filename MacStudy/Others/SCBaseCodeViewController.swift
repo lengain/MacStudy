@@ -13,6 +13,7 @@ class SCBaseCodeViewController: NSViewController {
         let contentView = NSView.init()
         contentView.wantsLayer = true
         contentView.layer?.backgroundColor = NSColor.white.cgColor
+        contentView.frame = NSRect.init(x: 0, y: 0, width: 400, height: 200)
         return contentView
     }()
     

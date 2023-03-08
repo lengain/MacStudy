@@ -171,7 +171,7 @@ class DocumentGenerator
     if @document_group.children != nil
       while @document_group.children.count > 0 do
         child = @document_group.children.last
-        puts "移除build phase:#{child.display_name}"
+        puts "remove build phase:#{child.display_name}"
         # 移除resources
         @main_target.resources_build_phase.remove_file_reference(child)
         # 从工程中移除
@@ -184,7 +184,7 @@ class DocumentGenerator
       if !File::directory?(item) && !item.start_with?('.')
         file_path = @document_dir + '/' + item
         File.delete(file_path) if File.exist?(file_path)
-        puts "删除文件:#{file_path}"
+        puts "delete file:#{file_path}"
       end
     end
   end
@@ -200,7 +200,7 @@ class DocumentGenerator
         # @main_target.add_file_references([file])
         # 添加File Ref到Resource
         file_array.push(file)
-        puts "添加文件:#{item}"
+        puts "add file:#{item}"
       end
     end
     @main_target.add_resources(file_array)
@@ -222,4 +222,5 @@ end
 
 dg = DocumentGenerator.new
 dg.start
+puts "Success"
 exit!
