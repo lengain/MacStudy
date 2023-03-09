@@ -114,7 +114,7 @@ extension SCButtonViewController : NSComboBoxDelegate {
         subViews.forEach { subview in
             subview.removeFromSuperview()
         }
-        _ = exampleCodeView()
+        exampleCodeView()
     }
     
     @objc private func showBordered(_ sender : NSButton) {

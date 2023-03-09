@@ -16,12 +16,10 @@ class SCComboBoxViewController: SCBaseCodeViewController, NSComboBoxDelegate {
     }
     /// start
     override func exampleCodeView() {
-        let comboBox = NSComboBox(labelWithString: "season")
+        let comboBox = NSComboBox(labelWithString: "Season")
         comboBox.delegate = self
         let seasonArray = ["Spring","Summer","Autumn","Winter"]
-        for season in seasonArray {
-            comboBox.addItem(withObjectValue: season)
-        }
+        comboBox.addItems(withObjectValues: seasonArray)
         
         contentView.addSubview(comboBox)
         comboBox.snp.makeConstraints { make in
