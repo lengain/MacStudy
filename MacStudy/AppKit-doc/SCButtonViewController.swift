@@ -7,7 +7,7 @@
 
 import Cocoa
 /// title : NSButton
-/// description : init, action
+/// description : init, action, bordered, bezelStyle
 class SCButtonViewController: SCBaseCodeViewController {
 
     override func viewDidLoad() {

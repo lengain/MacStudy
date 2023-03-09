@@ -34,6 +34,9 @@ class SCListViewController: NSViewController {
             }
             if self.isViewLoaded {
                 tableView.reloadData()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    self.tableView.scrollRowToVisible(0)
+                }
             }
         }
     }
@@ -42,7 +45,6 @@ class SCListViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-        tableView.reloadData()
     }
     
     func openSelectedFile() async {
