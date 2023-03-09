@@ -25,6 +25,7 @@ class SCDatePickViewController: SCBaseCodeViewController {
         textPicker.frame = CGRect.init(x: 10, y: 170, width: 200, height: 25)
         textPicker.target = self
         textPicker.action = #selector(SCDatePickViewController.dateSelected(_:))
+        textPicker.textColor = .red
         textPicker.dateValue = Date()//set date
         contentView.addSubview(textPicker)
         
