@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E230826A300681F3861B27C /* NSPopUpButton.md in Resources */ = {isa = PBXBuildFile; fileRef = 9F2F5DAAEEA9E763A4FDA6B9 /* NSPopUpButton.md */; };
+		1CE59CABF569B8ECC6E93E21 /* AppKit.json in Resources */ = {isa = PBXBuildFile; fileRef = 11C54AEE797AA1F7D0AF2023 /* AppKit.json */; };
+		20A755872A64B1E21D6AF75C /* NSPopUpButton.md in Resources */ = {isa = PBXBuildFile; fileRef = 06572A989D1906F704B3F173 /* NSPopUpButton.md */; };
+		23AA485F11EC65481EE80895 /* NSTextView.md in Resources */ = {isa = PBXBuildFile; fileRef = 40C3633D70F2F85A10F5CBD3 /* NSTextView.md */; };
 		330515A5296C0BC400129D51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330515A4296C0BC400129D51 /* AppDelegate.swift */; };
 		330515A7296C0BC400129D51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330515A6296C0BC400129D51 /* ViewController.swift */; };
 		330515AA296C0BC400129D51 /* MacStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 330515A8296C0BC400129D51 /* MacStudy.xcdatamodeld */; };
@@ -33,6 +35,7 @@
 		33330FE229AC490400632D60 /* SCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33330FE129AC490400632D60 /* SCViewController.swift */; };
 		33330FE829AC492D00632D60 /* SCButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33330FE729AC492D00632D60 /* SCButtonViewController.swift */; };
 		3361D5C229B97E8900B165FF /* NSViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361D5C129B97E8900B165FF /* NSViewExtension.swift */; };
+		3361D5C729B9B56500B165FF /* SCDatePickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361D5C529B9B56500B165FF /* SCDatePickViewController.swift */; };
 		336BEC0A29ADAACA00F26233 /* Sidebar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 336BEC0929ADAACA00F26233 /* Sidebar.plist */; };
 		337A824229AD9366007AE96B /* SCListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A824129AD9366007AE96B /* SCListViewController.swift */; };
 		337A824429AD9888007AE96B /* SCListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A824329AD9888007AE96B /* SCListItem.swift */; };
@@ -45,7 +48,6 @@
 		33C75B6729B85BF800A3010D /* SCComboBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B6629B85BF800A3010D /* SCComboBoxViewController.swift */; };
 		33C75B6929B85C1900A3010D /* SCPopupButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B6829B85C1900A3010D /* SCPopupButtonViewController.swift */; };
 		33C75B6B29B85C2F00A3010D /* SCSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B6A29B85C2F00A3010D /* SCSliderViewController.swift */; };
-		33C75B7129B85C5300A3010D /* SCDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B7029B85C5300A3010D /* SCDatePickerViewController.swift */; };
 		33C75B7729B85C8100A3010D /* SCStepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B7629B85C8100A3010D /* SCStepperViewController.swift */; };
 		33C75B7929B85C9500A3010D /* SCProgreddIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B7829B85C9500A3010D /* SCProgreddIndicatorViewController.swift */; };
 		33C75B7F29B85CCC00A3010D /* SCBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B7E29B85CCC00A3010D /* SCBoxViewController.swift */; };
@@ -66,19 +68,23 @@
 		33F5A70C29A4A54E00046E5B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 33F5A70B29A4A54E00046E5B /* SnapKit */; };
 		33F5A70E29A4B5C100046E5B /* SideBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5A70D29A4B5C100046E5B /* SideBarItemView.swift */; };
 		33F5A71229A5E94700046E5B /* LNOutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5A71129A5E94700046E5B /* LNOutlineView.swift */; };
-		3517DA05191727FAB0F92307 /* AppKit.json in Resources */ = {isa = PBXBuildFile; fileRef = 647F428D06C4C276265C9966 /* AppKit.json */; };
-		41293AE9C8BAEBFC78BF0770 /* NSSearchField.md in Resources */ = {isa = PBXBuildFile; fileRef = A14DE59E0E23873A45ADE422 /* NSSearchField.md */; };
-		62B5C0490263B9B737D26CFA /* NSTextField.md in Resources */ = {isa = PBXBuildFile; fileRef = 728D60A74A4AC10C6CC1C257 /* NSTextField.md */; };
-		68D2696AADE3864B5CCC035E /* NSSegmentedControl.md in Resources */ = {isa = PBXBuildFile; fileRef = 8A8462423DBA95C95266AF92 /* NSSegmentedControl.md */; };
-		9E7A5E7223DDAB923A911BE0 /* NSImageView.md in Resources */ = {isa = PBXBuildFile; fileRef = A0AF65F4F4A9D4FC4D4D2591 /* NSImageView.md */; };
-		B7D54E10AFEEF12E0FF90427 /* NSButton.md in Resources */ = {isa = PBXBuildFile; fileRef = B071A2717CF976EC7D8D0061 /* NSButton.md */; };
-		C37357A7295B45E8B430A4A2 /* NSView.md in Resources */ = {isa = PBXBuildFile; fileRef = CB043F5ED6D2BEB16CCDAF17 /* NSView.md */; };
-		DD5384870D548F1E15343EED /* NSComboBox.md in Resources */ = {isa = PBXBuildFile; fileRef = 6DA5247D1C51FFE05E4BFFFC /* NSComboBox.md */; };
-		EA05E2932AE1CBFD40A4BA67 /* NSTextView.md in Resources */ = {isa = PBXBuildFile; fileRef = 55C6F0BCC230F27F0A067574 /* NSTextView.md */; };
-		F5D314207639652B77E960F4 /* NSSlider.md in Resources */ = {isa = PBXBuildFile; fileRef = 645998D8EB6DE639EEECE271 /* NSSlider.md */; };
+		3D05C6DC36D8D049C57A2DA1 /* NSTextField.md in Resources */ = {isa = PBXBuildFile; fileRef = CB4C3E7B15DD9E4F8E63105E /* NSTextField.md */; };
+		424827DFE24554DB065961C7 /* NSView.md in Resources */ = {isa = PBXBuildFile; fileRef = 83B7212D3749F85F1F18393A /* NSView.md */; };
+		445A58ED0333A02D6FDB4573 /* NSButton.md in Resources */ = {isa = PBXBuildFile; fileRef = 08E6D255D75A266F7775BF53 /* NSButton.md */; };
+		5424710548D5582629B1B5D4 /* NSSearchField.md in Resources */ = {isa = PBXBuildFile; fileRef = D92DED166680BD1A06454CDF /* NSSearchField.md */; };
+		5E70AB99E669A5341CC3F6D8 /* NSSlider.md in Resources */ = {isa = PBXBuildFile; fileRef = 2462D30398AB63726640617C /* NSSlider.md */; };
+		79F61B63E8D88CDA59906B39 /* NSComboBox.md in Resources */ = {isa = PBXBuildFile; fileRef = F292366DE4355FA559A4B207 /* NSComboBox.md */; };
+		7A36A4CA09DAA21A9A1B941C /* NSSegmentedControl.md in Resources */ = {isa = PBXBuildFile; fileRef = 9BBEB3AC173542AE5D7ACADF /* NSSegmentedControl.md */; };
+		95ED624367A210E34CABF3EB /* NSImageView.md in Resources */ = {isa = PBXBuildFile; fileRef = 1E6BF0B86BD415196CC9CB1D /* NSImageView.md */; };
+		9956792DB853BA7D5B4EDBC4 /* NSDatePicker.md in Resources */ = {isa = PBXBuildFile; fileRef = EBAE39363F7D46501255BD2E /* NSDatePicker.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06572A989D1906F704B3F173 /* NSPopUpButton.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSPopUpButton.md; sourceTree = "<group>"; };
+		08E6D255D75A266F7775BF53 /* NSButton.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSButton.md; sourceTree = "<group>"; };
+		11C54AEE797AA1F7D0AF2023 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; path = AppKit.json; sourceTree = "<group>"; };
+		1E6BF0B86BD415196CC9CB1D /* NSImageView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSImageView.md; sourceTree = "<group>"; };
+		2462D30398AB63726640617C /* NSSlider.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSlider.md; sourceTree = "<group>"; };
 		28453732AF7AA912690CE6CF /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
 		330515A1296C0BC400129D51 /* MacStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		330515A4296C0BC400129D51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 		33330FE129AC490400632D60 /* SCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCViewController.swift; sourceTree = "<group>"; };
 		33330FE729AC492D00632D60 /* SCButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCButtonViewController.swift; sourceTree = "<group>"; };
 		3361D5C129B97E8900B165FF /* NSViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewExtension.swift; sourceTree = "<group>"; };
+		3361D5C529B9B56500B165FF /* SCDatePickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDatePickViewController.swift; sourceTree = "<group>"; };
 		336BEC0929ADAACA00F26233 /* Sidebar.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Sidebar.plist; sourceTree = "<group>"; };
 		337A824129AD9366007AE96B /* SCListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCListViewController.swift; sourceTree = "<group>"; };
 		337A824329AD9888007AE96B /* SCListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCListItem.swift; sourceTree = "<group>"; };
@@ -114,7 +121,6 @@
 		33C75B6629B85BF800A3010D /* SCComboBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCComboBoxViewController.swift; sourceTree = "<group>"; };
 		33C75B6829B85C1900A3010D /* SCPopupButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPopupButtonViewController.swift; sourceTree = "<group>"; };
 		33C75B6A29B85C2F00A3010D /* SCSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSliderViewController.swift; sourceTree = "<group>"; };
-		33C75B7029B85C5300A3010D /* SCDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDatePickerViewController.swift; sourceTree = "<group>"; };
 		33C75B7629B85C8100A3010D /* SCStepperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStepperViewController.swift; sourceTree = "<group>"; };
 		33C75B7829B85C9500A3010D /* SCProgreddIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProgreddIndicatorViewController.swift; sourceTree = "<group>"; };
 		33C75B7E29B85CCC00A3010D /* SCBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCBoxViewController.swift; sourceTree = "<group>"; };
@@ -134,21 +140,17 @@
 		33F5A70829A49D2F00046E5B /* SideBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItem.swift; sourceTree = "<group>"; };
 		33F5A70D29A4B5C100046E5B /* SideBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItemView.swift; sourceTree = "<group>"; };
 		33F5A71129A5E94700046E5B /* LNOutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNOutlineView.swift; sourceTree = "<group>"; };
-		55C6F0BCC230F27F0A067574 /* NSTextView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSTextView.md; sourceTree = "<group>"; };
+		40C3633D70F2F85A10F5CBD3 /* NSTextView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSTextView.md; sourceTree = "<group>"; };
 		57616C1A7CBD0DCBC22E1792 /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = NSView.md; path = Document/NSView.md; sourceTree = "<group>"; };
 		5EDBBFDB342C960FE75DA3F6 /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = NSView.md; path = Document/NSView.md; sourceTree = "<group>"; };
-		645998D8EB6DE639EEECE271 /* NSSlider.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSlider.md; sourceTree = "<group>"; };
-		647F428D06C4C276265C9966 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; path = AppKit.json; sourceTree = "<group>"; };
-		6DA5247D1C51FFE05E4BFFFC /* NSComboBox.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSComboBox.md; sourceTree = "<group>"; };
-		728D60A74A4AC10C6CC1C257 /* NSTextField.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSTextField.md; sourceTree = "<group>"; };
+		83B7212D3749F85F1F18393A /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSView.md; sourceTree = "<group>"; };
 		89483E20A27122EA487E45A5 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
-		8A8462423DBA95C95266AF92 /* NSSegmentedControl.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSegmentedControl.md; sourceTree = "<group>"; };
-		9F2F5DAAEEA9E763A4FDA6B9 /* NSPopUpButton.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSPopUpButton.md; sourceTree = "<group>"; };
-		A0AF65F4F4A9D4FC4D4D2591 /* NSImageView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSImageView.md; sourceTree = "<group>"; };
-		A14DE59E0E23873A45ADE422 /* NSSearchField.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSearchField.md; sourceTree = "<group>"; };
-		B071A2717CF976EC7D8D0061 /* NSButton.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSButton.md; sourceTree = "<group>"; };
-		CB043F5ED6D2BEB16CCDAF17 /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSView.md; sourceTree = "<group>"; };
+		9BBEB3AC173542AE5D7ACADF /* NSSegmentedControl.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSegmentedControl.md; sourceTree = "<group>"; };
+		CB4C3E7B15DD9E4F8E63105E /* NSTextField.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSTextField.md; sourceTree = "<group>"; };
 		D02FA8BC31F7F106212CE3A4 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
+		D92DED166680BD1A06454CDF /* NSSearchField.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSearchField.md; sourceTree = "<group>"; };
+		EBAE39363F7D46501255BD2E /* NSDatePicker.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSDatePicker.md; sourceTree = "<group>"; };
+		F292366DE4355FA559A4B207 /* NSComboBox.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSComboBox.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,17 +174,18 @@
 		0C97CB1C680C61994EF75B6E /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				9F2F5DAAEEA9E763A4FDA6B9 /* NSPopUpButton.md */,
-				55C6F0BCC230F27F0A067574 /* NSTextView.md */,
-				A0AF65F4F4A9D4FC4D4D2591 /* NSImageView.md */,
-				647F428D06C4C276265C9966 /* AppKit.json */,
-				6DA5247D1C51FFE05E4BFFFC /* NSComboBox.md */,
-				8A8462423DBA95C95266AF92 /* NSSegmentedControl.md */,
-				645998D8EB6DE639EEECE271 /* NSSlider.md */,
-				B071A2717CF976EC7D8D0061 /* NSButton.md */,
-				A14DE59E0E23873A45ADE422 /* NSSearchField.md */,
-				728D60A74A4AC10C6CC1C257 /* NSTextField.md */,
-				CB043F5ED6D2BEB16CCDAF17 /* NSView.md */,
+				06572A989D1906F704B3F173 /* NSPopUpButton.md */,
+				40C3633D70F2F85A10F5CBD3 /* NSTextView.md */,
+				1E6BF0B86BD415196CC9CB1D /* NSImageView.md */,
+				11C54AEE797AA1F7D0AF2023 /* AppKit.json */,
+				EBAE39363F7D46501255BD2E /* NSDatePicker.md */,
+				F292366DE4355FA559A4B207 /* NSComboBox.md */,
+				9BBEB3AC173542AE5D7ACADF /* NSSegmentedControl.md */,
+				2462D30398AB63726640617C /* NSSlider.md */,
+				08E6D255D75A266F7775BF53 /* NSButton.md */,
+				D92DED166680BD1A06454CDF /* NSSearchField.md */,
+				CB4C3E7B15DD9E4F8E63105E /* NSTextField.md */,
+				83B7212D3749F85F1F18393A /* NSView.md */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -313,7 +316,7 @@
 				33C75B6629B85BF800A3010D /* SCComboBoxViewController.swift */,
 				33C75B6829B85C1900A3010D /* SCPopupButtonViewController.swift */,
 				33C75B6A29B85C2F00A3010D /* SCSliderViewController.swift */,
-				33C75B7029B85C5300A3010D /* SCDatePickerViewController.swift */,
+				3361D5C529B9B56500B165FF /* SCDatePickViewController.swift */,
 				33C75B7629B85C8100A3010D /* SCStepperViewController.swift */,
 				33C75B7829B85C9500A3010D /* SCProgreddIndicatorViewController.swift */,
 				33C75B7E29B85CCC00A3010D /* SCBoxViewController.swift */,
@@ -410,17 +413,18 @@
 				330515AC296C0BC500129D51 /* Assets.xcassets in Resources */,
 				336BEC0A29ADAACA00F26233 /* Sidebar.plist in Resources */,
 				330515AF296C0BC500129D51 /* Main.storyboard in Resources */,
-				2E230826A300681F3861B27C /* NSPopUpButton.md in Resources */,
-				EA05E2932AE1CBFD40A4BA67 /* NSTextView.md in Resources */,
-				9E7A5E7223DDAB923A911BE0 /* NSImageView.md in Resources */,
-				3517DA05191727FAB0F92307 /* AppKit.json in Resources */,
-				DD5384870D548F1E15343EED /* NSComboBox.md in Resources */,
-				68D2696AADE3864B5CCC035E /* NSSegmentedControl.md in Resources */,
-				F5D314207639652B77E960F4 /* NSSlider.md in Resources */,
-				B7D54E10AFEEF12E0FF90427 /* NSButton.md in Resources */,
-				41293AE9C8BAEBFC78BF0770 /* NSSearchField.md in Resources */,
-				62B5C0490263B9B737D26CFA /* NSTextField.md in Resources */,
-				C37357A7295B45E8B430A4A2 /* NSView.md in Resources */,
+				20A755872A64B1E21D6AF75C /* NSPopUpButton.md in Resources */,
+				23AA485F11EC65481EE80895 /* NSTextView.md in Resources */,
+				95ED624367A210E34CABF3EB /* NSImageView.md in Resources */,
+				1CE59CABF569B8ECC6E93E21 /* AppKit.json in Resources */,
+				9956792DB853BA7D5B4EDBC4 /* NSDatePicker.md in Resources */,
+				79F61B63E8D88CDA59906B39 /* NSComboBox.md in Resources */,
+				7A36A4CA09DAA21A9A1B941C /* NSSegmentedControl.md in Resources */,
+				5E70AB99E669A5341CC3F6D8 /* NSSlider.md in Resources */,
+				445A58ED0333A02D6FDB4573 /* NSButton.md in Resources */,
+				5424710548D5582629B1B5D4 /* NSSearchField.md in Resources */,
+				3D05C6DC36D8D049C57A2DA1 /* NSTextField.md in Resources */,
+				424827DFE24554DB065961C7 /* NSView.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +438,7 @@
 				337A824429AD9888007AE96B /* SCListItem.swift in Sources */,
 				33C75B9129B85D9100A3010D /* SCPanelViewController.swift in Sources */,
 				330515AA296C0BC400129D51 /* MacStudy.xcdatamodeld in Sources */,
-				33C75B7129B85C5300A3010D /* SCDatePickerViewController.swift in Sources */,
+				3361D5C729B9B56500B165FF /* SCDatePickViewController.swift in Sources */,
 				332643E729B1FD4B00A15C73 /* MarkdownBaseView.swift in Sources */,
 				33C75B6729B85BF800A3010D /* SCComboBoxViewController.swift in Sources */,
 				330515A7296C0BC400129D51 /* ViewController.swift in Sources */,

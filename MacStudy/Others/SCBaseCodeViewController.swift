@@ -17,22 +17,33 @@ class SCBaseCodeViewController: NSViewController {
         return contentView
     }()
     
+    private var nibImplementation : Bool = false
+    
+    //即可以加载带xib的vc,也可以加载不带xib的vc
     override func loadView() {
-        self.view = NSView()
+        let className : NSString = self.className.components(separatedBy: ".").last! as NSString
+        nibImplementation = Bundle.main.loadNibNamed(className as NSNib.Name, owner: nil, topLevelObjects: nil)
+        if nibImplementation {
+            super.loadView()
+        }else {
+            self.view = NSView()
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
         exampleCodeView()
-        let size = contentView.frame.size
-        view.addSubview(contentView)
-        contentView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(kTitlebarHeight + padding16)
-            make.left.equalToSuperview().offset(padding16)
-            make.bottom.equalToSuperview().offset(-padding16)
-            make.height.equalTo(size.height)
-            make.width.equalTo(size.width)
+        if nibImplementation == false {
+            let size = contentView.frame.size
+            view.addSubview(contentView)
+            contentView.snp.makeConstraints { make in
+                make.top.equalToSuperview().offset(kTitlebarHeight + padding16)
+                make.left.equalToSuperview().offset(padding16)
+                make.bottom.equalToSuperview().offset(-padding16)
+                make.height.equalTo(size.height)
+                make.width.equalTo(size.width)
+            }
         }
     }
     
