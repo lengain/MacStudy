@@ -150,7 +150,7 @@ extension SCPopupButtonViewController : NSComboBoxDelegate {
             for view in contentView.subviews {
                 if let popUp : NSPopUpButton = view as? NSPopUpButton {
                     popUp.preferredEdge = preferedEdge
-                    //下面代码执行两次是为了让NSPopUpButton的指示器刷新位置
+                    //下面代码执行两次是为了让NSPopUpButton的指示器刷新位置 如果在控件初始化时指定preferredEdge,则无需添加下面代码
                     popUp.pullsDown = !popUp.pullsDown
                     popUp.pullsDown = !popUp.pullsDown
                 }

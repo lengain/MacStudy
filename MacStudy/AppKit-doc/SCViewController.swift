@@ -16,11 +16,12 @@ class SCViewController: SCBaseCodeViewController {
     }
     
     override func exampleCodeView() {
-        contentView.frame = NSRect.init(x: 0, y: 0, width: 130, height: 70)
+        contentView.size = CGSize(width: 130, height: 70)
         /// start
         /// NSView 's layer is CALayer
         let view = NSView.init(frame: NSRect.init(x: 10, y: 10, width: 50, height: 50))
         view.wantsLayer = true
+        
         /// backgroundColor
         view.layer?.backgroundColor = NSColor.yellow.cgColor
         
@@ -33,9 +34,12 @@ class SCViewController: SCBaseCodeViewController {
         view.layer?.masksToBounds = true
         
         /// shadow
-        view.layer?.shadowColor = NSColor(white: 0, alpha: 0.65).cgColor
-        view.layer?.shadowOpacity = 0.5
-        view.layer?.shadowOffset = CGSize.init(width: 1, height: 1)
+        let shadow = NSShadow()
+        shadow.shadowBlurRadius = 2
+        shadow.shadowColor = NSColor(white: 0, alpha: 0.35);
+        shadow.shadowOffset = CGSize.init(width: 2, height: 2)
+        view.shadow = shadow
+        
         /// layer contents image
         let rightView = NSView.init(frame: NSRect.init(x: 70, y: 10, width: 50, height: 50))
         rightView.wantsLayer = true
@@ -44,6 +48,7 @@ class SCViewController: SCBaseCodeViewController {
             let maskRef =  CGImageSourceCreateImageAtIndex(source, 0, nil)
             rightView.layer?.contents = maskRef
         }
+        
         /// end
         contentView.addSubview(view)
         contentView.addSubview(rightView)

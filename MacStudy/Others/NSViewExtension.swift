@@ -45,4 +45,13 @@ extension NSView {
         }
     }
     
+    var size : CGSize {
+        get {
+            frame.size
+        }
+        set {
+            frame.size = newValue
+        }
+    }
+    
 }
