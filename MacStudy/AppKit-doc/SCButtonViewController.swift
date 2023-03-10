@@ -85,15 +85,15 @@ extension SCButtonViewController : NSComboBoxDelegate {
         let resetButton = NSButton(title: "Reset", target: self, action: #selector(SCButtonViewController.resetAction(_:)))
         view.addSubview(resetButton)
         resetButton.snp.makeConstraints { make in
-            make.top.equalTo(self.contentView).offset(15)
-            make.left.equalTo(self.contentView.snp.right).offset(15)
+            make.top.equalTo(contentView).offset(15)
+            make.left.equalTo(contentView.snp.right).offset(15)
         }
         
         let bezelButton = NSButton(checkboxWithTitle: "bordered", target: self, action: #selector(SCButtonViewController.showBordered(_:)))
         view.addSubview(bezelButton)
         bezelButton.snp.makeConstraints { make in
             make.top.equalTo(resetButton.snp.bottom).offset(15)
-            make.left.equalTo(self.contentView.snp.right).offset(15)
+            make.left.equalTo(contentView.snp.right).offset(15)
         }
         
         let comboBox = NSComboBox(labelWithString: "BezelStyle")
@@ -104,7 +104,7 @@ extension SCButtonViewController : NSComboBoxDelegate {
         view.addSubview(comboBox)
         comboBox.snp.makeConstraints { make in
             make.top.equalTo(bezelButton.snp.bottom).offset(15)
-            make.left.equalTo(self.contentView.snp.right).offset(15)
+            make.left.equalTo(contentView.snp.right).offset(15)
             make.width.equalTo(100)
         }
     }

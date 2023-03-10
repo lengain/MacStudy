@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05FD1033A0C7B40A48F85DB2 /* NSProgressIndicator.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C9EB461B3569D944425786A /* NSProgressIndicator.md */; };
-		1F7CED02EF36ED545525E27A /* NSComboBox.md in Resources */ = {isa = PBXBuildFile; fileRef = 51B53C7AB7803F1CF47E51AE /* NSComboBox.md */; };
-		2E86F99361AE775071341FB4 /* NSTextField.md in Resources */ = {isa = PBXBuildFile; fileRef = 40B88B2D7742E728398B9041 /* NSTextField.md */; };
-		2F7046690C290DBC6E90AF95 /* NSDatePicker.md in Resources */ = {isa = PBXBuildFile; fileRef = 8FB04EA5ED8F92E9526464C7 /* NSDatePicker.md */; };
+		097D349EDCF5C0CC4F270C6F /* NSTextField.md in Resources */ = {isa = PBXBuildFile; fileRef = DE4F9721D209F70887559617 /* NSTextField.md */; };
+		223079B8F4CDF337E8BB5BC2 /* NSSplitView.md in Resources */ = {isa = PBXBuildFile; fileRef = 85D45CCC3D5CDD5A763E565A /* NSSplitView.md */; };
 		330515A5296C0BC400129D51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330515A4296C0BC400129D51 /* AppDelegate.swift */; };
 		330515A7296C0BC400129D51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330515A6296C0BC400129D51 /* ViewController.swift */; };
 		330515AA296C0BC400129D51 /* MacStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 330515A8296C0BC400129D51 /* MacStudy.xcdatamodeld */; };
@@ -69,25 +67,25 @@
 		33F5A70C29A4A54E00046E5B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 33F5A70B29A4A54E00046E5B /* SnapKit */; };
 		33F5A70E29A4B5C100046E5B /* SideBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5A70D29A4B5C100046E5B /* SideBarItemView.swift */; };
 		33F5A71229A5E94700046E5B /* LNOutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5A71129A5E94700046E5B /* LNOutlineView.swift */; };
-		358ADE715AED0A8C551F6A66 /* NSSegmentedControl.md in Resources */ = {isa = PBXBuildFile; fileRef = D09F5D24689BB883304FA784 /* NSSegmentedControl.md */; };
-		484DBE089BE4E0937B5E4276 /* NSSlider.md in Resources */ = {isa = PBXBuildFile; fileRef = D612FD90CE99B61AAF760DA5 /* NSSlider.md */; };
-		59701F1F2ADABC9E47B3284A /* NSSearchField.md in Resources */ = {isa = PBXBuildFile; fileRef = 421E934AD602B21B78F45D65 /* NSSearchField.md */; };
-		6D1C7B61AB608DF4B992D284 /* NSButton.md in Resources */ = {isa = PBXBuildFile; fileRef = 3171F1771D2D1250B699E47F /* NSButton.md */; };
-		796F985A8F334D0A42E8B7C8 /* NSBox.md in Resources */ = {isa = PBXBuildFile; fileRef = C12876E9793619D3E91A3F5E /* NSBox.md */; };
-		870FDCA8EA0293ABB8B6EF86 /* NSStepper.md in Resources */ = {isa = PBXBuildFile; fileRef = C09745B506AD268E7E2EB161 /* NSStepper.md */; };
-		9B0E8431ACA0B403772313AE /* NSView.md in Resources */ = {isa = PBXBuildFile; fileRef = AB04E1C11F3068A0B4CBAD0A /* NSView.md */; };
-		B86799179C8A3D0CECA96BA4 /* AppKit.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CEF94138F7B193121FA9CED /* AppKit.json */; };
-		CF1639A1D1EA22B72953D0A3 /* NSTextView.md in Resources */ = {isa = PBXBuildFile; fileRef = 0DF3F765DE22420FFD5047E2 /* NSTextView.md */; };
-		D3E1952939D532C816A68932 /* NSPopUpButton.md in Resources */ = {isa = PBXBuildFile; fileRef = ABFD9B69C01D63263BDC22FE /* NSPopUpButton.md */; };
-		DD2AB464964C1DC9814A002B /* NSImageView.md in Resources */ = {isa = PBXBuildFile; fileRef = 6A025E4BC3FAA2741ED94522 /* NSImageView.md */; };
+		3932C02C0FABE3A765E74F65 /* NSBox.md in Resources */ = {isa = PBXBuildFile; fileRef = BBFCE241AB17F2225F155F66 /* NSBox.md */; };
+		3F1D219E7143A4A23C4860CC /* NSView.md in Resources */ = {isa = PBXBuildFile; fileRef = B5AC353786C0EDCB82217E0F /* NSView.md */; };
+		649735126DDCC8D0F7ACF1F1 /* NSSegmentedControl.md in Resources */ = {isa = PBXBuildFile; fileRef = 0C86481E0DE5890989B6C372 /* NSSegmentedControl.md */; };
+		65F1E9B331778137B467EE78 /* NSProgressIndicator.md in Resources */ = {isa = PBXBuildFile; fileRef = 8A51D1A8BCD2F56AD8BE7B2C /* NSProgressIndicator.md */; };
+		6F8AA1526F73D4386F079F91 /* NSButton.md in Resources */ = {isa = PBXBuildFile; fileRef = C87EAF6BC024B7724FE17AFE /* NSButton.md */; };
+		720BF44C81E20ECE3DD33E2B /* NSTextView.md in Resources */ = {isa = PBXBuildFile; fileRef = 74C450A36DC6ABE4D55CE7B9 /* NSTextView.md */; };
+		75EF8F903DA1158BFD5E6B80 /* NSComboBox.md in Resources */ = {isa = PBXBuildFile; fileRef = 8B9B88FAAAE7C94D78125DA7 /* NSComboBox.md */; };
+		778FCFC98E4C36E45241C20E /* AppKit.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BBD028C07FBE34A986D9DA /* AppKit.json */; };
+		849714D7DBBC6AF22947B8BC /* NSDatePicker.md in Resources */ = {isa = PBXBuildFile; fileRef = F72431577E8A7A0B6D22608D /* NSDatePicker.md */; };
+		9A0A937CF9A9A9DAC6A54507 /* NSSlider.md in Resources */ = {isa = PBXBuildFile; fileRef = 937538203F16934303AC9282 /* NSSlider.md */; };
+		A34D53B03A199F17ACB93227 /* NSStepper.md in Resources */ = {isa = PBXBuildFile; fileRef = D71DF20C205E8C6009DFCC6B /* NSStepper.md */; };
+		B885D7C21BA0B324F03FA48D /* NSPopUpButton.md in Resources */ = {isa = PBXBuildFile; fileRef = D7460E1785622FAFBC1DEDD5 /* NSPopUpButton.md */; };
+		CDD0AAB3C7C1F846237E9AB2 /* NSSearchField.md in Resources */ = {isa = PBXBuildFile; fileRef = F4DAC936CE9831DDA7100724 /* NSSearchField.md */; };
+		F2F971BDDC445EF3CA162AC2 /* NSImageView.md in Resources */ = {isa = PBXBuildFile; fileRef = F374F775B2E07AF58638ED0F /* NSImageView.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0CEF94138F7B193121FA9CED /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; path = AppKit.json; sourceTree = "<group>"; };
-		0DF3F765DE22420FFD5047E2 /* NSTextView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSTextView.md; sourceTree = "<group>"; };
+		0C86481E0DE5890989B6C372 /* NSSegmentedControl.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSegmentedControl.md; sourceTree = "<group>"; };
 		28453732AF7AA912690CE6CF /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
-		2C9EB461B3569D944425786A /* NSProgressIndicator.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSProgressIndicator.md; sourceTree = "<group>"; };
-		3171F1771D2D1250B699E47F /* NSButton.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSButton.md; sourceTree = "<group>"; };
 		330515A1296C0BC400129D51 /* MacStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		330515A4296C0BC400129D51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		330515A6296C0BC400129D51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,21 +140,25 @@
 		33F5A70829A49D2F00046E5B /* SideBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItem.swift; sourceTree = "<group>"; };
 		33F5A70D29A4B5C100046E5B /* SideBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItemView.swift; sourceTree = "<group>"; };
 		33F5A71129A5E94700046E5B /* LNOutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNOutlineView.swift; sourceTree = "<group>"; };
-		40B88B2D7742E728398B9041 /* NSTextField.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSTextField.md; sourceTree = "<group>"; };
-		421E934AD602B21B78F45D65 /* NSSearchField.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSearchField.md; sourceTree = "<group>"; };
-		51B53C7AB7803F1CF47E51AE /* NSComboBox.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSComboBox.md; sourceTree = "<group>"; };
 		57616C1A7CBD0DCBC22E1792 /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = NSView.md; path = Document/NSView.md; sourceTree = "<group>"; };
 		5EDBBFDB342C960FE75DA3F6 /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = NSView.md; path = Document/NSView.md; sourceTree = "<group>"; };
-		6A025E4BC3FAA2741ED94522 /* NSImageView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSImageView.md; sourceTree = "<group>"; };
+		74C450A36DC6ABE4D55CE7B9 /* NSTextView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSTextView.md; sourceTree = "<group>"; };
+		85D45CCC3D5CDD5A763E565A /* NSSplitView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSplitView.md; sourceTree = "<group>"; };
 		89483E20A27122EA487E45A5 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
-		8FB04EA5ED8F92E9526464C7 /* NSDatePicker.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSDatePicker.md; sourceTree = "<group>"; };
-		AB04E1C11F3068A0B4CBAD0A /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSView.md; sourceTree = "<group>"; };
-		ABFD9B69C01D63263BDC22FE /* NSPopUpButton.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSPopUpButton.md; sourceTree = "<group>"; };
-		C09745B506AD268E7E2EB161 /* NSStepper.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSStepper.md; sourceTree = "<group>"; };
-		C12876E9793619D3E91A3F5E /* NSBox.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSBox.md; sourceTree = "<group>"; };
+		8A51D1A8BCD2F56AD8BE7B2C /* NSProgressIndicator.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSProgressIndicator.md; sourceTree = "<group>"; };
+		8B9B88FAAAE7C94D78125DA7 /* NSComboBox.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSComboBox.md; sourceTree = "<group>"; };
+		937538203F16934303AC9282 /* NSSlider.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSlider.md; sourceTree = "<group>"; };
+		A5BBD028C07FBE34A986D9DA /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; path = AppKit.json; sourceTree = "<group>"; };
+		B5AC353786C0EDCB82217E0F /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSView.md; sourceTree = "<group>"; };
+		BBFCE241AB17F2225F155F66 /* NSBox.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSBox.md; sourceTree = "<group>"; };
+		C87EAF6BC024B7724FE17AFE /* NSButton.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSButton.md; sourceTree = "<group>"; };
 		D02FA8BC31F7F106212CE3A4 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
-		D09F5D24689BB883304FA784 /* NSSegmentedControl.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSegmentedControl.md; sourceTree = "<group>"; };
-		D612FD90CE99B61AAF760DA5 /* NSSlider.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSlider.md; sourceTree = "<group>"; };
+		D71DF20C205E8C6009DFCC6B /* NSStepper.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSStepper.md; sourceTree = "<group>"; };
+		D7460E1785622FAFBC1DEDD5 /* NSPopUpButton.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSPopUpButton.md; sourceTree = "<group>"; };
+		DE4F9721D209F70887559617 /* NSTextField.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSTextField.md; sourceTree = "<group>"; };
+		F374F775B2E07AF58638ED0F /* NSImageView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSImageView.md; sourceTree = "<group>"; };
+		F4DAC936CE9831DDA7100724 /* NSSearchField.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSearchField.md; sourceTree = "<group>"; };
+		F72431577E8A7A0B6D22608D /* NSDatePicker.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSDatePicker.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,21 +182,22 @@
 		0C97CB1C680C61994EF75B6E /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				ABFD9B69C01D63263BDC22FE /* NSPopUpButton.md */,
-				C09745B506AD268E7E2EB161 /* NSStepper.md */,
-				0DF3F765DE22420FFD5047E2 /* NSTextView.md */,
-				6A025E4BC3FAA2741ED94522 /* NSImageView.md */,
-				2C9EB461B3569D944425786A /* NSProgressIndicator.md */,
-				0CEF94138F7B193121FA9CED /* AppKit.json */,
-				8FB04EA5ED8F92E9526464C7 /* NSDatePicker.md */,
-				51B53C7AB7803F1CF47E51AE /* NSComboBox.md */,
-				D09F5D24689BB883304FA784 /* NSSegmentedControl.md */,
-				D612FD90CE99B61AAF760DA5 /* NSSlider.md */,
-				3171F1771D2D1250B699E47F /* NSButton.md */,
-				421E934AD602B21B78F45D65 /* NSSearchField.md */,
-				40B88B2D7742E728398B9041 /* NSTextField.md */,
-				AB04E1C11F3068A0B4CBAD0A /* NSView.md */,
-				C12876E9793619D3E91A3F5E /* NSBox.md */,
+				D7460E1785622FAFBC1DEDD5 /* NSPopUpButton.md */,
+				D71DF20C205E8C6009DFCC6B /* NSStepper.md */,
+				74C450A36DC6ABE4D55CE7B9 /* NSTextView.md */,
+				F374F775B2E07AF58638ED0F /* NSImageView.md */,
+				8A51D1A8BCD2F56AD8BE7B2C /* NSProgressIndicator.md */,
+				A5BBD028C07FBE34A986D9DA /* AppKit.json */,
+				F72431577E8A7A0B6D22608D /* NSDatePicker.md */,
+				85D45CCC3D5CDD5A763E565A /* NSSplitView.md */,
+				8B9B88FAAAE7C94D78125DA7 /* NSComboBox.md */,
+				0C86481E0DE5890989B6C372 /* NSSegmentedControl.md */,
+				937538203F16934303AC9282 /* NSSlider.md */,
+				C87EAF6BC024B7724FE17AFE /* NSButton.md */,
+				F4DAC936CE9831DDA7100724 /* NSSearchField.md */,
+				DE4F9721D209F70887559617 /* NSTextField.md */,
+				B5AC353786C0EDCB82217E0F /* NSView.md */,
+				BBFCE241AB17F2225F155F66 /* NSBox.md */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -422,21 +425,22 @@
 				330515AC296C0BC500129D51 /* Assets.xcassets in Resources */,
 				336BEC0A29ADAACA00F26233 /* Sidebar.plist in Resources */,
 				330515AF296C0BC500129D51 /* Main.storyboard in Resources */,
-				D3E1952939D532C816A68932 /* NSPopUpButton.md in Resources */,
-				870FDCA8EA0293ABB8B6EF86 /* NSStepper.md in Resources */,
-				CF1639A1D1EA22B72953D0A3 /* NSTextView.md in Resources */,
-				DD2AB464964C1DC9814A002B /* NSImageView.md in Resources */,
-				05FD1033A0C7B40A48F85DB2 /* NSProgressIndicator.md in Resources */,
-				B86799179C8A3D0CECA96BA4 /* AppKit.json in Resources */,
-				2F7046690C290DBC6E90AF95 /* NSDatePicker.md in Resources */,
-				1F7CED02EF36ED545525E27A /* NSComboBox.md in Resources */,
-				358ADE715AED0A8C551F6A66 /* NSSegmentedControl.md in Resources */,
-				484DBE089BE4E0937B5E4276 /* NSSlider.md in Resources */,
-				6D1C7B61AB608DF4B992D284 /* NSButton.md in Resources */,
-				59701F1F2ADABC9E47B3284A /* NSSearchField.md in Resources */,
-				2E86F99361AE775071341FB4 /* NSTextField.md in Resources */,
-				9B0E8431ACA0B403772313AE /* NSView.md in Resources */,
-				796F985A8F334D0A42E8B7C8 /* NSBox.md in Resources */,
+				B885D7C21BA0B324F03FA48D /* NSPopUpButton.md in Resources */,
+				A34D53B03A199F17ACB93227 /* NSStepper.md in Resources */,
+				720BF44C81E20ECE3DD33E2B /* NSTextView.md in Resources */,
+				F2F971BDDC445EF3CA162AC2 /* NSImageView.md in Resources */,
+				65F1E9B331778137B467EE78 /* NSProgressIndicator.md in Resources */,
+				778FCFC98E4C36E45241C20E /* AppKit.json in Resources */,
+				849714D7DBBC6AF22947B8BC /* NSDatePicker.md in Resources */,
+				223079B8F4CDF337E8BB5BC2 /* NSSplitView.md in Resources */,
+				75EF8F903DA1158BFD5E6B80 /* NSComboBox.md in Resources */,
+				649735126DDCC8D0F7ACF1F1 /* NSSegmentedControl.md in Resources */,
+				9A0A937CF9A9A9DAC6A54507 /* NSSlider.md in Resources */,
+				6F8AA1526F73D4386F079F91 /* NSButton.md in Resources */,
+				CDD0AAB3C7C1F846237E9AB2 /* NSSearchField.md in Resources */,
+				097D349EDCF5C0CC4F270C6F /* NSTextField.md in Resources */,
+				3F1D219E7143A4A23C4860CC /* NSView.md in Resources */,
+				3932C02C0FABE3A765E74F65 /* NSBox.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
