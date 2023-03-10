@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F20268368BE654CA8A1E751 /* NSPopUpButton.md in Resources */ = {isa = PBXBuildFile; fileRef = 39E7C7169CFCF6A2A09C86AD /* NSPopUpButton.md */; };
-		1E089F9ACC0DF11FA2E599AD /* NSButton.md in Resources */ = {isa = PBXBuildFile; fileRef = 88C0540453AE90AF423E55A4 /* NSButton.md */; };
+		09D3ABAFD489BA7013EAE98D /* AppKit.json in Resources */ = {isa = PBXBuildFile; fileRef = 312D578C78E1AE4633CFA1F5 /* AppKit.json */; };
+		11663A9A25F30E5E05AECF25 /* NSStepper.md in Resources */ = {isa = PBXBuildFile; fileRef = 60237240D361FDB4349AEAAD /* NSStepper.md */; };
+		245289B21C870274314F86D7 /* NSPopUpButton.md in Resources */ = {isa = PBXBuildFile; fileRef = 899634EB3D25F1615F7EA55D /* NSPopUpButton.md */; };
+		2C5BF7D1FB2407CFD325DCBE /* NSView.md in Resources */ = {isa = PBXBuildFile; fileRef = 53BEACE535943491E3105567 /* NSView.md */; };
 		330515A5296C0BC400129D51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330515A4296C0BC400129D51 /* AppDelegate.swift */; };
 		330515A7296C0BC400129D51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330515A6296C0BC400129D51 /* ViewController.swift */; };
 		330515AA296C0BC400129D51 /* MacStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 330515A8296C0BC400129D51 /* MacStudy.xcdatamodeld */; };
@@ -38,7 +40,6 @@
 		336BEC0A29ADAACA00F26233 /* Sidebar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 336BEC0929ADAACA00F26233 /* Sidebar.plist */; };
 		337A824229AD9366007AE96B /* SCListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A824129AD9366007AE96B /* SCListViewController.swift */; };
 		337A824429AD9888007AE96B /* SCListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A824329AD9888007AE96B /* SCListItem.swift */; };
-		339DE5E652B2BB809820A291 /* NSSlider.md in Resources */ = {isa = PBXBuildFile; fileRef = 3882BDD9A195A489EE0BE16C /* NSSlider.md */; };
 		33C75B4829B81FA800A3010D /* SCImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B4729B81FA800A3010D /* SCImageViewController.swift */; };
 		33C75B4B29B82AE600A3010D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 33C75B4A29B82AE600A3010D /* SDWebImage */; };
 		33C75B5129B85AE700A3010D /* SCTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C75B5029B85AE700A3010D /* SCTextFieldViewController.swift */; };
@@ -68,25 +69,27 @@
 		33F5A70C29A4A54E00046E5B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 33F5A70B29A4A54E00046E5B /* SnapKit */; };
 		33F5A70E29A4B5C100046E5B /* SideBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5A70D29A4B5C100046E5B /* SideBarItemView.swift */; };
 		33F5A71229A5E94700046E5B /* LNOutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5A71129A5E94700046E5B /* LNOutlineView.swift */; };
-		424FB81BD3A3EF21D9923BBA /* NSSplitView.md in Resources */ = {isa = PBXBuildFile; fileRef = A7B6BD518DC6998D580AC1ED /* NSSplitView.md */; };
-		6957E28941F17D1B7520317A /* NSProgressIndicator.md in Resources */ = {isa = PBXBuildFile; fileRef = E1B5A1FDBDB9A890D7664900 /* NSProgressIndicator.md */; };
-		6FBC85E515478A616BAD710F /* NSStepper.md in Resources */ = {isa = PBXBuildFile; fileRef = 27E95B750DEFF39C7F2B12F1 /* NSStepper.md */; };
-		7F5F27D2D36F6B107AA46A38 /* NSSearchField.md in Resources */ = {isa = PBXBuildFile; fileRef = 8F682C982443A3D469969599 /* NSSearchField.md */; };
-		8B8DD9A8AD3C2652A13BBE97 /* NSSegmentedControl.md in Resources */ = {isa = PBXBuildFile; fileRef = 47A6DC76F2BB184A7F184350 /* NSSegmentedControl.md */; };
-		8F4BD726688A525A615B7DA6 /* NSView.md in Resources */ = {isa = PBXBuildFile; fileRef = FF8379DEC10596FF7D9CE61D /* NSView.md */; };
-		A230149AA90923CA4BF35787 /* NSImageView.md in Resources */ = {isa = PBXBuildFile; fileRef = 9FC197E1AD44D5EDFE019C37 /* NSImageView.md */; };
-		B4B6E443EA60769BB050F20E /* AppKit.json in Resources */ = {isa = PBXBuildFile; fileRef = 7892E345D03F40137C0A9050 /* AppKit.json */; };
-		BBAA958E3C509E748868E0A3 /* NSTextField.md in Resources */ = {isa = PBXBuildFile; fileRef = 62B2E8D51800ED11B300B8C4 /* NSTextField.md */; };
-		BBE865B448709F188D690616 /* NSBox.md in Resources */ = {isa = PBXBuildFile; fileRef = 9760D3674F1CF5C14FD9DF41 /* NSBox.md */; };
-		C57105D0E19A87845C979F09 /* NSTextView.md in Resources */ = {isa = PBXBuildFile; fileRef = 72D412CD12C3B9F94B7CF85F /* NSTextView.md */; };
-		CAF3AF34B0AF620270AFF9BB /* NSComboBox.md in Resources */ = {isa = PBXBuildFile; fileRef = 7A34965F070C85796CCB27B2 /* NSComboBox.md */; };
-		DE038F352A9BA81BB3C6EC13 /* NSDatePicker.md in Resources */ = {isa = PBXBuildFile; fileRef = EB9AAC00A9243236F70A0A68 /* NSDatePicker.md */; };
-		E86CB4390F952B4FDF68D38E /* NSCollectionView.md in Resources */ = {isa = PBXBuildFile; fileRef = 61F19388F118767229C85D0D /* NSCollectionView.md */; };
+		39875F4BE877A264DCD8BCE1 /* NSButton.md in Resources */ = {isa = PBXBuildFile; fileRef = 9667E4C2DFE54B4DCFD6F9EF /* NSButton.md */; };
+		5895F09731A221DB3B759B3E /* NSDatePicker.md in Resources */ = {isa = PBXBuildFile; fileRef = 875F1702154DE0AD8ADE5191 /* NSDatePicker.md */; };
+		677905C22ADF023179155701 /* NSSegmentedControl.md in Resources */ = {isa = PBXBuildFile; fileRef = CF81205E2E4A61B5FA9C62B2 /* NSSegmentedControl.md */; };
+		7550953620F2185117A0EDC2 /* NSTextField.md in Resources */ = {isa = PBXBuildFile; fileRef = A13D51956EF35C0684D61805 /* NSTextField.md */; };
+		775E41852FA655632085A535 /* NSSearchField.md in Resources */ = {isa = PBXBuildFile; fileRef = 6D47352503273B7C5A1DD33B /* NSSearchField.md */; };
+		8968B4A25DB937C5C571BD35 /* NSImageView.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D4E60F18D244115A26A191C /* NSImageView.md */; };
+		9E3B0D8AE778569840FAA5CA /* NSTextView.md in Resources */ = {isa = PBXBuildFile; fileRef = E38FA8399DE53146AFE5A9F7 /* NSTextView.md */; };
+		9FCCA5865DECA5323ECDDC13 /* NSSplitView.md in Resources */ = {isa = PBXBuildFile; fileRef = 4BE6B18E2D49701C870C297A /* NSSplitView.md */; };
+		A0A96A09FE389BF277DA4DF1 /* NSProgressIndicator.md in Resources */ = {isa = PBXBuildFile; fileRef = B9EDE6F53E5C31F531B2CD13 /* NSProgressIndicator.md */; };
+		B596690D6E3A81C567C80AB5 /* NSBox.md in Resources */ = {isa = PBXBuildFile; fileRef = 68CDFA06BC79DA644FA37A01 /* NSBox.md */; };
+		CE1043B711B0C39591F16CEE /* NSTabView.md in Resources */ = {isa = PBXBuildFile; fileRef = AC0FA105F7730C6504212C32 /* NSTabView.md */; };
+		D85F260763AA367AF9672922 /* NSSlider.md in Resources */ = {isa = PBXBuildFile; fileRef = 0FDBEFC6138777FECE34A046 /* NSSlider.md */; };
+		D86767CE1AC48C6FE1D82B8E /* NSComboBox.md in Resources */ = {isa = PBXBuildFile; fileRef = 667052881994E16881D8E6EB /* NSComboBox.md */; };
+		DB0EFB31D3BB51C027114DB8 /* NSCollectionView.md in Resources */ = {isa = PBXBuildFile; fileRef = B524AE75E2A0C1F6602B5F8A /* NSCollectionView.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		27E95B750DEFF39C7F2B12F1 /* NSStepper.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = NSStepper.md; sourceTree = "<group>"; };
+		0D4E60F18D244115A26A191C /* NSImageView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSImageView.md; sourceTree = "<group>"; };
+		0FDBEFC6138777FECE34A046 /* NSSlider.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSlider.md; sourceTree = "<group>"; };
 		28453732AF7AA912690CE6CF /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
+		312D578C78E1AE4633CFA1F5 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; path = AppKit.json; sourceTree = "<group>"; };
 		330515A1296C0BC400129D51 /* MacStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		330515A4296C0BC400129D51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		330515A6296C0BC400129D51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,26 +144,25 @@
 		33F5A70829A49D2F00046E5B /* SideBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItem.swift; sourceTree = "<group>"; };
 		33F5A70D29A4B5C100046E5B /* SideBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItemView.swift; sourceTree = "<group>"; };
 		33F5A71129A5E94700046E5B /* LNOutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNOutlineView.swift; sourceTree = "<group>"; };
-		3882BDD9A195A489EE0BE16C /* NSSlider.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = NSSlider.md; sourceTree = "<group>"; };
-		39E7C7169CFCF6A2A09C86AD /* NSPopUpButton.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = NSPopUpButton.md; sourceTree = "<group>"; };
-		47A6DC76F2BB184A7F184350 /* NSSegmentedControl.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = NSSegmentedControl.md; sourceTree = "<group>"; };
+		4BE6B18E2D49701C870C297A /* NSSplitView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSplitView.md; sourceTree = "<group>"; };
+		53BEACE535943491E3105567 /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSView.md; sourceTree = "<group>"; };
 		57616C1A7CBD0DCBC22E1792 /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = NSView.md; path = Document/NSView.md; sourceTree = "<group>"; };
 		5EDBBFDB342C960FE75DA3F6 /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = NSView.md; path = Document/NSView.md; sourceTree = "<group>"; };
-		61F19388F118767229C85D0D /* NSCollectionView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = NSCollectionView.md; sourceTree = "<group>"; };
-		62B2E8D51800ED11B300B8C4 /* NSTextField.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = NSTextField.md; sourceTree = "<group>"; };
-		72D412CD12C3B9F94B7CF85F /* NSTextView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = NSTextView.md; sourceTree = "<group>"; };
-		7892E345D03F40137C0A9050 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = AppKit.json; sourceTree = "<group>"; };
-		7A34965F070C85796CCB27B2 /* NSComboBox.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = NSComboBox.md; sourceTree = "<group>"; };
-		88C0540453AE90AF423E55A4 /* NSButton.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = NSButton.md; sourceTree = "<group>"; };
+		60237240D361FDB4349AEAAD /* NSStepper.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSStepper.md; sourceTree = "<group>"; };
+		667052881994E16881D8E6EB /* NSComboBox.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSComboBox.md; sourceTree = "<group>"; };
+		68CDFA06BC79DA644FA37A01 /* NSBox.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSBox.md; sourceTree = "<group>"; };
+		6D47352503273B7C5A1DD33B /* NSSearchField.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSearchField.md; sourceTree = "<group>"; };
+		875F1702154DE0AD8ADE5191 /* NSDatePicker.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSDatePicker.md; sourceTree = "<group>"; };
 		89483E20A27122EA487E45A5 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
-		8F682C982443A3D469969599 /* NSSearchField.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = NSSearchField.md; sourceTree = "<group>"; };
-		9760D3674F1CF5C14FD9DF41 /* NSBox.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = NSBox.md; sourceTree = "<group>"; };
-		9FC197E1AD44D5EDFE019C37 /* NSImageView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = NSImageView.md; sourceTree = "<group>"; };
-		A7B6BD518DC6998D580AC1ED /* NSSplitView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = NSSplitView.md; sourceTree = "<group>"; };
+		899634EB3D25F1615F7EA55D /* NSPopUpButton.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSPopUpButton.md; sourceTree = "<group>"; };
+		9667E4C2DFE54B4DCFD6F9EF /* NSButton.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSButton.md; sourceTree = "<group>"; };
+		A13D51956EF35C0684D61805 /* NSTextField.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSTextField.md; sourceTree = "<group>"; };
+		AC0FA105F7730C6504212C32 /* NSTabView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSTabView.md; sourceTree = "<group>"; };
+		B524AE75E2A0C1F6602B5F8A /* NSCollectionView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSCollectionView.md; sourceTree = "<group>"; };
+		B9EDE6F53E5C31F531B2CD13 /* NSProgressIndicator.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSProgressIndicator.md; sourceTree = "<group>"; };
+		CF81205E2E4A61B5FA9C62B2 /* NSSegmentedControl.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSSegmentedControl.md; sourceTree = "<group>"; };
 		D02FA8BC31F7F106212CE3A4 /* AppKit.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = AppKit.json; path = Document/AppKit.json; sourceTree = "<group>"; };
-		E1B5A1FDBDB9A890D7664900 /* NSProgressIndicator.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = NSProgressIndicator.md; sourceTree = "<group>"; };
-		EB9AAC00A9243236F70A0A68 /* NSDatePicker.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = NSDatePicker.md; sourceTree = "<group>"; };
-		FF8379DEC10596FF7D9CE61D /* NSView.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = NSView.md; sourceTree = "<group>"; };
+		E38FA8399DE53146AFE5A9F7 /* NSTextView.md */ = {isa = PBXFileReference; includeInIndex = 1; path = NSTextView.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,23 +186,24 @@
 		0C97CB1C680C61994EF75B6E /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				39E7C7169CFCF6A2A09C86AD /* NSPopUpButton.md */,
-				27E95B750DEFF39C7F2B12F1 /* NSStepper.md */,
-				72D412CD12C3B9F94B7CF85F /* NSTextView.md */,
-				9FC197E1AD44D5EDFE019C37 /* NSImageView.md */,
-				E1B5A1FDBDB9A890D7664900 /* NSProgressIndicator.md */,
-				61F19388F118767229C85D0D /* NSCollectionView.md */,
-				7892E345D03F40137C0A9050 /* AppKit.json */,
-				EB9AAC00A9243236F70A0A68 /* NSDatePicker.md */,
-				A7B6BD518DC6998D580AC1ED /* NSSplitView.md */,
-				7A34965F070C85796CCB27B2 /* NSComboBox.md */,
-				47A6DC76F2BB184A7F184350 /* NSSegmentedControl.md */,
-				3882BDD9A195A489EE0BE16C /* NSSlider.md */,
-				88C0540453AE90AF423E55A4 /* NSButton.md */,
-				8F682C982443A3D469969599 /* NSSearchField.md */,
-				62B2E8D51800ED11B300B8C4 /* NSTextField.md */,
-				FF8379DEC10596FF7D9CE61D /* NSView.md */,
-				9760D3674F1CF5C14FD9DF41 /* NSBox.md */,
+				899634EB3D25F1615F7EA55D /* NSPopUpButton.md */,
+				60237240D361FDB4349AEAAD /* NSStepper.md */,
+				E38FA8399DE53146AFE5A9F7 /* NSTextView.md */,
+				0D4E60F18D244115A26A191C /* NSImageView.md */,
+				B9EDE6F53E5C31F531B2CD13 /* NSProgressIndicator.md */,
+				B524AE75E2A0C1F6602B5F8A /* NSCollectionView.md */,
+				312D578C78E1AE4633CFA1F5 /* AppKit.json */,
+				875F1702154DE0AD8ADE5191 /* NSDatePicker.md */,
+				4BE6B18E2D49701C870C297A /* NSSplitView.md */,
+				667052881994E16881D8E6EB /* NSComboBox.md */,
+				CF81205E2E4A61B5FA9C62B2 /* NSSegmentedControl.md */,
+				0FDBEFC6138777FECE34A046 /* NSSlider.md */,
+				9667E4C2DFE54B4DCFD6F9EF /* NSButton.md */,
+				AC0FA105F7730C6504212C32 /* NSTabView.md */,
+				6D47352503273B7C5A1DD33B /* NSSearchField.md */,
+				A13D51956EF35C0684D61805 /* NSTextField.md */,
+				53BEACE535943491E3105567 /* NSView.md */,
+				68CDFA06BC79DA644FA37A01 /* NSBox.md */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -405,11 +408,11 @@
 			);
 			mainGroup = 33051598296C0BC300129D51;
 			packageReferences = (
-				33F5A70A29A4A54E00046E5B /* XCRemoteSwiftPackageReference "SnapKit" */,
-				332643B329B0A95E00A15C73 /* XCRemoteSwiftPackageReference "ModernAppKit" */,
+				33F5A70A29A4A54E00046E5B /* XCRemoteSwiftPackageReference "SnapKit.git" */,
+				332643B329B0A95E00A15C73 /* XCRemoteSwiftPackageReference "ModernAppKit.git" */,
 				332643C629B1EBDE00A15C73 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
 				332643D129B1FAFC00A15C73 /* XCRemoteSwiftPackageReference "Splash" */,
-				33C75B4929B82AE600A3010D /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				33C75B4929B82AE600A3010D /* XCRemoteSwiftPackageReference "SDWebImage.git" */,
 			);
 			productRefGroup = 330515A2296C0BC400129D51 /* Products */;
 			projectDirPath = "";
@@ -428,23 +431,24 @@
 				330515AC296C0BC500129D51 /* Assets.xcassets in Resources */,
 				336BEC0A29ADAACA00F26233 /* Sidebar.plist in Resources */,
 				330515AF296C0BC500129D51 /* Main.storyboard in Resources */,
-				0F20268368BE654CA8A1E751 /* NSPopUpButton.md in Resources */,
-				6FBC85E515478A616BAD710F /* NSStepper.md in Resources */,
-				C57105D0E19A87845C979F09 /* NSTextView.md in Resources */,
-				A230149AA90923CA4BF35787 /* NSImageView.md in Resources */,
-				6957E28941F17D1B7520317A /* NSProgressIndicator.md in Resources */,
-				E86CB4390F952B4FDF68D38E /* NSCollectionView.md in Resources */,
-				B4B6E443EA60769BB050F20E /* AppKit.json in Resources */,
-				DE038F352A9BA81BB3C6EC13 /* NSDatePicker.md in Resources */,
-				424FB81BD3A3EF21D9923BBA /* NSSplitView.md in Resources */,
-				CAF3AF34B0AF620270AFF9BB /* NSComboBox.md in Resources */,
-				8B8DD9A8AD3C2652A13BBE97 /* NSSegmentedControl.md in Resources */,
-				339DE5E652B2BB809820A291 /* NSSlider.md in Resources */,
-				1E089F9ACC0DF11FA2E599AD /* NSButton.md in Resources */,
-				7F5F27D2D36F6B107AA46A38 /* NSSearchField.md in Resources */,
-				BBAA958E3C509E748868E0A3 /* NSTextField.md in Resources */,
-				8F4BD726688A525A615B7DA6 /* NSView.md in Resources */,
-				BBE865B448709F188D690616 /* NSBox.md in Resources */,
+				245289B21C870274314F86D7 /* NSPopUpButton.md in Resources */,
+				11663A9A25F30E5E05AECF25 /* NSStepper.md in Resources */,
+				9E3B0D8AE778569840FAA5CA /* NSTextView.md in Resources */,
+				8968B4A25DB937C5C571BD35 /* NSImageView.md in Resources */,
+				A0A96A09FE389BF277DA4DF1 /* NSProgressIndicator.md in Resources */,
+				DB0EFB31D3BB51C027114DB8 /* NSCollectionView.md in Resources */,
+				09D3ABAFD489BA7013EAE98D /* AppKit.json in Resources */,
+				5895F09731A221DB3B759B3E /* NSDatePicker.md in Resources */,
+				9FCCA5865DECA5323ECDDC13 /* NSSplitView.md in Resources */,
+				D86767CE1AC48C6FE1D82B8E /* NSComboBox.md in Resources */,
+				677905C22ADF023179155701 /* NSSegmentedControl.md in Resources */,
+				D85F260763AA367AF9672922 /* NSSlider.md in Resources */,
+				39875F4BE877A264DCD8BCE1 /* NSButton.md in Resources */,
+				CE1043B711B0C39591F16CEE /* NSTabView.md in Resources */,
+				775E41852FA655632085A535 /* NSSearchField.md in Resources */,
+				7550953620F2185117A0EDC2 /* NSTextField.md in Resources */,
+				2C5BF7D1FB2407CFD325DCBE /* NSView.md in Resources */,
+				B596690D6E3A81C567C80AB5 /* NSBox.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,7 +733,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		332643B329B0A95E00A15C73 /* XCRemoteSwiftPackageReference "ModernAppKit" */ = {
+		332643B329B0A95E00A15C73 /* XCRemoteSwiftPackageReference "ModernAppKit.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/fumoboy007/ModernAppKit.git";
 			requirement = {
@@ -753,7 +757,7 @@
 				minimumVersion = 0.9.0;
 			};
 		};
-		33C75B4929B82AE600A3010D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+		33C75B4929B82AE600A3010D /* XCRemoteSwiftPackageReference "SDWebImage.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
 			requirement = {
@@ -761,7 +765,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		33F5A70A29A4A54E00046E5B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		33F5A70A29A4A54E00046E5B /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -774,17 +778,17 @@
 /* Begin XCSwiftPackageProductDependency section */
 		332643B429B0A95E00A15C73 /* MAKAutoLayoutTextView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 332643B329B0A95E00A15C73 /* XCRemoteSwiftPackageReference "ModernAppKit" */;
+			package = 332643B329B0A95E00A15C73 /* XCRemoteSwiftPackageReference "ModernAppKit.git" */;
 			productName = MAKAutoLayoutTextView;
 		};
 		332643B629B0A95E00A15C73 /* MAKLayerView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 332643B329B0A95E00A15C73 /* XCRemoteSwiftPackageReference "ModernAppKit" */;
+			package = 332643B329B0A95E00A15C73 /* XCRemoteSwiftPackageReference "ModernAppKit.git" */;
 			productName = MAKLayerView;
 		};
 		332643B829B0A95E00A15C73 /* MAKShadowView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 332643B329B0A95E00A15C73 /* XCRemoteSwiftPackageReference "ModernAppKit" */;
+			package = 332643B329B0A95E00A15C73 /* XCRemoteSwiftPackageReference "ModernAppKit.git" */;
 			productName = MAKShadowView;
 		};
 		332643C729B1EBDE00A15C73 /* MarkdownUI */ = {
@@ -799,12 +803,12 @@
 		};
 		33C75B4A29B82AE600A3010D /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 33C75B4929B82AE600A3010D /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			package = 33C75B4929B82AE600A3010D /* XCRemoteSwiftPackageReference "SDWebImage.git" */;
 			productName = SDWebImage;
 		};
 		33F5A70B29A4A54E00046E5B /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 33F5A70A29A4A54E00046E5B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 33F5A70A29A4A54E00046E5B /* XCRemoteSwiftPackageReference "SnapKit.git" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */

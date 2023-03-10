@@ -36,7 +36,7 @@ class SCCollectionViewController: SCBaseCodeViewController, NSCollectionViewDele
         }))
         
         //NSCollectionView inherits NSView
-        //So NSCollectionView must coordinate NSScrollView for scroll,
+        //So NSCollectionView relies on NSScrollView for scroll,
         let scrollView = NSScrollView(frame: contentView.frame.insetBy(dx: 0, dy: 0))
         contentView.addSubview(scrollView)
         

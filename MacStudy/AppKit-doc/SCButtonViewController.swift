@@ -13,7 +13,7 @@ class SCButtonViewController: SCBaseCodeViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-        attachBezelTypeCheck()
+        attachPropertySetting()
     }
     
     /// start
@@ -79,8 +79,8 @@ extension NSButton.BezelStyle {
 
 extension SCButtonViewController : NSComboBoxDelegate {
     static let bezelArray : [NSButton.BezelStyle] = [.rounded, .shadowlessSquare, .circular, .texturedSquare, .helpButton, .smallSquare, .texturedRounded, .roundRect, .recessed, .roundedDisclosure, .inline]
-    
-    func attachBezelTypeCheck() {
+
+    func attachPropertySetting() {
         
         let resetButton = NSButton(title: "Reset", target: self, action: #selector(SCButtonViewController.resetAction(_:)))
         view.addSubview(resetButton)
@@ -97,10 +97,8 @@ extension SCButtonViewController : NSComboBoxDelegate {
         }
         
         let comboBox = NSComboBox(labelWithString: "BezelStyle")
+        comboBox.addItems(withObjectValues: SCButtonViewController.bezelArray.compactMap{$0.name})
         comboBox.delegate = self
-        for bezel in SCButtonViewController.bezelArray {
-            comboBox.addItem(withObjectValue: bezel.name)
-        }
         view.addSubview(comboBox)
         comboBox.snp.makeConstraints { make in
             make.top.equalTo(bezelButton.snp.bottom).offset(15)
