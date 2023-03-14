@@ -7,6 +7,7 @@
 
 import Cocoa
 /// title : NSButton
+/// index : 400
 /// description : init, action, bordered, bezelStyle
 class SCButtonViewController: SCBaseCodeViewController {
 

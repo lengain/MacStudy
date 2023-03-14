@@ -10,8 +10,12 @@ import Cocoa
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
  
+    @IBOutlet weak var dockMenu: NSMenu!
+    var statusItem : NSStatusItem?
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        bindStatusBar()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -20,6 +24,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
         return true
+    }
+    
+    func bindStatusBar() {
+        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
+
     }
 
     // MARK: - Core Data stack
@@ -129,6 +138,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         print(NSApplication.shared.mainWindow!)
         print(NSApplication.shared.keyWindow!)
         return true
+    }
+    
+    func applicationDockMenu(_ sender: NSApplication) -> NSMenu? {
+        return self.dockMenu
     }
 }
 

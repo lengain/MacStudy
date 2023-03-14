@@ -7,11 +7,12 @@
 
 import Cocoa
 /// title : NSSegmentedControl
+/// index : 1200
 /// description : segmented control
 class SCSegmentedControlViewController: SCBaseCodeViewController {
 
     override func viewDidLoad() {
-        contentView.frame = CGRect.init(x: 0, y: 0, width: 320, height: 200)
+        contentView.frame = CGRect.init(x: 0, y: 0, width: 320, height: 120)
         super.viewDidLoad()
         // Do view setup here.
         attachPropertySetting()
@@ -22,7 +23,7 @@ class SCSegmentedControlViewController: SCBaseCodeViewController {
 
     override func exampleCodeView() {
         let segment = NSSegmentedControl(labels: ["Spring","Summer","Autumn","Winter"], trackingMode: .momentary, target: self, action: #selector(SCSegmentedControlViewController.segmentAction(_:)))
-        segment.frame = CGRect.init(x: 10, y: 10, width: 300, height: 20)
+        segment.frame = CGRect.init(x: 10, y: 50, width: 300, height: 20)
         segment.segmentStyle = .automatic
         contentView.addSubview(segment)
     }

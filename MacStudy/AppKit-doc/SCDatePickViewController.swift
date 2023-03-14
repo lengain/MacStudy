@@ -7,6 +7,7 @@
 
 import Cocoa
 /// title : NSDatePicker
+/// index : 1400
 /// description : datePickerStyle, datePickerElements
 class SCDatePickViewController: SCBaseCodeViewController {
 

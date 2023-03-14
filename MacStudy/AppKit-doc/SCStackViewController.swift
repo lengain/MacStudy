@@ -6,7 +6,9 @@
 //
 
 import Cocoa
-
+/// title : NSStackView
+/// index : 2500
+/// description : 
 class SCStackViewController: SCBaseCodeViewController {
 
     override func viewDidLoad() {

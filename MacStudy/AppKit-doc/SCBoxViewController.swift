@@ -7,6 +7,7 @@
 
 import Cocoa
 /// title : NSBox
+/// index : 1700
 /// description : style
 class SCBoxViewController: SCBaseCodeViewController {
 

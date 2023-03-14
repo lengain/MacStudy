@@ -7,6 +7,7 @@
 
 import Cocoa
 /// title : NSSlider
+/// index : 1300
 /// description : sldier setting
 class SCSliderViewController: SCBaseCodeViewController {
 

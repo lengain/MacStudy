@@ -8,6 +8,7 @@
 import Cocoa
 import SDWebImage
 /// title : NSImageView
+/// index : 300
 /// description : load image, image url, image aspect to fill
 class SCImageViewController: SCBaseCodeViewController {
 

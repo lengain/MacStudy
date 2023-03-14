@@ -6,7 +6,9 @@
 //
 
 import Cocoa
-
+/// title : NSStatusBar
+/// index : 2400
+/// description : add menu
 class SCStatusBarViewController: SCBaseCodeViewController {
 
     override func viewDidLoad() {

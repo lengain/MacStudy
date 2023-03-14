@@ -7,6 +7,7 @@
 
 import Cocoa
 /// title : NSSplitView
+/// index : 800
 /// description : split some view, divider style
 class SCSplitViewController: SCBaseCodeViewController {
 

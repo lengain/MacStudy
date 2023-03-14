@@ -7,6 +7,7 @@
 
 import Cocoa
 /// title : NSPopUpButton
+/// index : 1000
 /// description : items, pullsDown, preferredEdge, altersState
 class SCPopupButtonViewController: SCBaseCodeViewController {
 

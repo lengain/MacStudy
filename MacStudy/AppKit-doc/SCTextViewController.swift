@@ -7,6 +7,7 @@
 
 import Cocoa
 /// title : NSTextView
+/// index : 200
 /// description :  huge text input
 class SCTextViewController: SCBaseCodeViewController , NSTextViewDelegate {
 
@@ -22,6 +23,7 @@ class SCTextViewController: SCBaseCodeViewController , NSTextViewDelegate {
         
         let textView = NSTextView(frame: NSRect.init(x: 10, y: 10, width: 280, height: 180))
         textView.delegate = self
+        textView.string = "Mac Dev is very interesting"
         textView.backgroundColor = .windowBackgroundColor
         contentView.addSubview(textView)
     }

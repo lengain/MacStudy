@@ -6,7 +6,9 @@
 //
 
 import Cocoa
-
+/// title : NSOutlineView
+/// index : 700
+/// description : dataSource, delegate, section header footer
 class SCOutlineViewController: SCBaseCodeViewController {
 
     override func viewDidLoad() {

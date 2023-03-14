@@ -8,6 +8,7 @@ include Xcodeproj
 
 class SCCodeItem
   attr_accessor :title
+  attr_accessor :index
   attr_accessor :description
   attr_accessor :code
   attr_accessor :filePath
@@ -21,11 +22,13 @@ class SCCodeItem
   def to_hash
     @title.chomp!
     @description.chomp!
+    @index = 0 if @index == nil
     {
       "title": @title,
       "description": @description,
       "filePath": @filePath,
       "className": @className,
+      "index": @index
     }
   end
 
@@ -98,14 +101,9 @@ class DocumentGenerator
 
   # @param [SCCodeItem] code_item
   def generate_code_markdown(code_item)
-    code = "
-  ``` swift
-  #{code_item.code}
-  ```
-"
     file_path = @document_dir + '/' + code_item.title + '.md'
     f = File.new(file_path, "w+")
-    f.puts(code)
+    f.puts(code_item.code)
     f.close
   end
 
@@ -144,6 +142,14 @@ class DocumentGenerator
       code_item.title = title
     end
 
+    index_pattern = Regexp.new("/// index.+\n")
+    swift_code.match(index_pattern) do |data|
+      index = data.to_s
+      index.slice!("/// index : ")
+      index.slice!("\n")
+      code_item.index = index.to_i
+    end
+
     desc_pattern = Regexp.new("/// description.+\n")
     swift_code.match(desc_pattern) do |data|
       desc = data.to_s
@@ -151,13 +157,32 @@ class DocumentGenerator
       code_item.description = desc
     end
 
+    md = ""
+    md_pattern = Regexp.new("/\\* md[\\s\\S]*\\*/")
+    swift_code.match(md_pattern) do |data|
+      md = data.to_s
+      md.slice!("/* md")
+      md.slice!("*/")
+    end
+
     code_pattern = Regexp.new("/// start[\\s\\S]*/// end")
     swift_code.match(code_pattern) do |data|
       code = data.to_s
       code.slice!("/// start")
       code.slice!("/// end")
-      code_item.code = code
+
+      code_item.code = "
+  #{md}
+  ``` swift
+  #{code}
+  ```
+"
     end
+
+
+    code =
+
+
     code_item.title == nil ? nil : code_item
   end
 

@@ -7,6 +7,7 @@
 
 import Cocoa
 /// title : NSComboBox
+/// index : 900
 /// description : combo box
 class SCComboBoxViewController: SCBaseCodeViewController, NSComboBoxDelegate {
 

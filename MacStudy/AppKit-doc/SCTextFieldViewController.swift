@@ -7,9 +7,13 @@
 
 import Cocoa
 /// title : NSTextField
+/// index : 100
 /// description :  input text field, single line , secure text, label
 class SCTextFieldViewController: SCBaseCodeViewController, NSTextFieldDelegate {
 
+    fileprivate var attachPannel : NSPanel?
+    fileprivate var callBack : ((String, String) -> ())?
+    
     override func viewDidLoad() {
         contentView.frame = NSRect.init(x: 10, y: 10, width: 300, height: 130)
         super.viewDidLoad()
@@ -88,4 +92,39 @@ class SCTextFieldViewController: SCBaseCodeViewController, NSTextFieldDelegate {
     }
     
     /// end
+}
+
+/// For SCPanelViewController
+extension SCTextFieldViewController {
+    
+    func panelConfig(with pannel:NSPanel, callBack:@escaping ((String, String)->())) {
+        for view in contentView.subviews {
+            view.y += 80
+        }
+        attachCloseButtonForPanel()
+        self.attachPannel = pannel
+        self.callBack = callBack
+        
+        self.contentView.snp.remakeConstraints { make in
+            make.edges.equalToSuperview()
+            make.width.equalTo(350)
+            make.height.equalTo(200)
+        }
+        
+    }
+    
+    fileprivate func attachCloseButtonForPanel() {
+        
+        let closeButton = NSButton(title: "confirm", target: self, action: #selector(SCTextFieldViewController.closeButtonAction(_:)))
+        contentView.addSubview(closeButton)
+        closeButton.snp.makeConstraints { make in
+            make.centerX.equalTo(contentView)
+            make.bottom.equalTo(contentView).offset(-20)
+        }
+    }
+    
+    @objc func closeButtonAction(_ sender : NSButton) {
+        self.callBack?("MacStudy","123456")
+        NSApp.mainWindow?.endSheet(self.attachPannel!, returnCode: .OK)
+    }
 }

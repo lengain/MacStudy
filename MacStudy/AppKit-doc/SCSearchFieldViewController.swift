@@ -7,6 +7,7 @@
 
 import Cocoa
 /// title : NSSearchField
+/// index : 1100
 /// description : search field
 class SCSearchFieldViewController: SCBaseCodeViewController {
 

@@ -7,6 +7,7 @@
 
 import Cocoa
 /// title : NSProgressIndicator
+/// index : 1600
 /// description : style, size, color
 class SCProgressIndicatorViewController: SCBaseCodeViewController {
 

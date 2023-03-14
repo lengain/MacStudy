@@ -24,7 +24,8 @@ class SCListViewController: NSViewController {
         didSet {
             if let file = Bundle.main.url(forResource: jsonName + ".json", withExtension: nil) {
                 let itemArray : [SCListItemData] = loadBundleJsonFile(file)
-                self.dataArray = itemArray
+                self.dataArray = itemArray.sorted(by: { $0.index < $1.index
+                })
             }else {
                 print("Coundn't find \(jsonName) in main bundle")
                 if jsonName == "AppKit" {///第一次运行 没有 AppKit ,提示执行脚本

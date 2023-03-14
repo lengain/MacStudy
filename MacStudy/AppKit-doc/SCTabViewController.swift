@@ -7,6 +7,7 @@
 
 import Cocoa
 /// title : NSTabView
+/// index : 1800
 /// description : manage NSViewController
 class SCTabViewController: SCBaseCodeViewController, NSTabViewDelegate {
 

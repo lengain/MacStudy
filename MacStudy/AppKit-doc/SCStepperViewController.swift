@@ -7,6 +7,7 @@
 
 import Cocoa
 /// title : NSStepper
+/// index : 1500
 /// description : minValue, maxValue, increment
 class SCStepperViewController: SCBaseCodeViewController {
 

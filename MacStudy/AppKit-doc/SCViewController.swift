@@ -7,6 +7,7 @@
 
 import Cocoa
 /// title : NSView
+/// index : 0
 /// description : background Color, border, cornerRadius, shadow
 class SCViewController: SCBaseCodeViewController {
 

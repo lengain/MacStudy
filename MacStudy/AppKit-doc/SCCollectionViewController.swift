@@ -7,6 +7,7 @@
 
 import Cocoa
 /// title : NSCollectionView
+/// index : 500
 /// description : dataSource, delegate, section header footer
 class SCCollectionViewController: SCBaseCodeViewController, NSCollectionViewDelegateFlowLayout, NSCollectionViewDataSource {
     
