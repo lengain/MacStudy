@@ -8,6 +8,7 @@
 import SwiftUI
 import MarkdownUI
 import Splash
+
 struct MarkdownView: View {
     @Environment(\.colorScheme) private var colorScheme
     let text : String
@@ -15,6 +16,7 @@ struct MarkdownView: View {
         MarkdownBaseView {
             Markdown(text)
                 .markdownCodeSyntaxHighlighter(.splash(theme:self.theme))
+                .markdownImageProvider(DefaultImageProvider(urlSession: URLSessionManager.shared.session))
         }
     }
     

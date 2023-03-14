@@ -12,8 +12,8 @@ import Cocoa
 class SCTableViewController: SCBaseCodeViewController, NSTableViewDataSource,  NSTableViewDelegate {
     /* md
 
-#### NSTableView
-     
+![img](https://raw.githubusercontent.com/lengain/MacStudy/main/MacStudy/Resources/NSTableView.PNG)
+
      */
 
     override func viewDidLoad() {
