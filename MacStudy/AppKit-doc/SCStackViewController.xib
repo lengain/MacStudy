@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SCStackViewController" customModule="MacStudy" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="siq-8X-dKm">
+                    <rect key="frame" x="271" y="185" width="131" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" state="on" alignment="left" toolTip="spacing of stack view" maxValue="100" doubleValue="20" tickMarkPosition="above" sliderType="linear" id="cnw-QO-Zjd"/>
+                    <connections>
+                        <action selector="onSpaceChanged:" target="-2" id="bF6-FL-K9V"/>
+                    </connections>
+                </slider>
+                <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pTc-LQ-FNt">
+                    <rect key="frame" x="272" y="150" width="99" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="orientation" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="MO7-5y-XTK">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <objectValues>
+                            <string>vertical</string>
+                            <string>horizontal</string>
+                        </objectValues>
+                    </comboBoxCell>
+                    <connections>
+                        <action selector="orientationChanged:" target="-2" id="OMR-tC-sSk"/>
+                    </connections>
+                </comboBox>
+                <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nuc-rm-vOz">
+                    <rect key="frame" x="272" y="120" width="131" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="distribution" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="PcC-uS-gAe">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <objectValues>
+                            <string>gravityAreas</string>
+                            <string>fill</string>
+                            <string>fillEqually</string>
+                            <string>fillProportionally</string>
+                            <string>equalSpacing</string>
+                            <string>equalCentering</string>
+                        </objectValues>
+                    </comboBoxCell>
+                    <connections>
+                        <action selector="distributionChanged:" target="-2" id="eEo-HT-Gqs"/>
+                    </connections>
+                </comboBox>
+            </subviews>
+            <point key="canvasLocation" x="-13" y="154"/>
+        </customView>
+    </objects>
+</document>

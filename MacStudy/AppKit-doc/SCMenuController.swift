@@ -9,7 +9,7 @@ import Cocoa
 
 /// title : NSMenu
 /// index : 2300
-/// description : insert menu
+/// description : manage menu
 class SCMenuController: SCBaseCodeViewController {
 
     override func viewDidLoad() {

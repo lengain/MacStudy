@@ -8,7 +8,7 @@
 import Cocoa
 /// title : NSTableView
 /// index : 600
-/// description : dataSource, delegate, section header footer
+/// description : dataSource, delegate
 class SCTableViewController: SCBaseCodeViewController, NSTableViewDataSource,  NSTableViewDelegate {
     /* md
 
@@ -52,6 +52,7 @@ class SCTableViewController: SCBaseCodeViewController, NSTableViewDataSource,  N
         tableView.focusRingType = .none
         tableView.delegate = self
         tableView.dataSource = self
+        
 
         [identifierNumber, identifierName, identifierSex].forEach { id in
             let column = NSTableColumn(identifier: id)
@@ -88,6 +89,18 @@ class SCTableViewController: SCBaseCodeViewController, NSTableViewDataSource,  N
         return view
     }
     
+    //custom NSTableRowView for change selected row background
+    func tableView(_ tableView: NSTableView, rowViewForRow row: Int) -> NSTableRowView? {
+        let identifier =  NSUserInterfaceItemIdentifier.init("RowView")
+        var view = tableView.makeView(withIdentifier: identifier, owner: self) as? NSTableRowView
+        if view == nil {
+            view = SCColorTableRowView()
+            view?.identifier = identifier
+            (view as! SCColorTableRowView).selectionBackgroundColor = NSColor.red
+        }
+        return view
+    }
+    
     
     class SCTextTableViewCell : NSTableCellView {
         lazy var titleLabel: NSTextField = {
@@ -98,7 +111,7 @@ class SCTableViewController: SCBaseCodeViewController, NSTableViewDataSource,  N
         
         override var objectValue: Any? {
             didSet {
-                titleLabel.stringValue = objectValue as! String
+                titleLabel.stringValue = objectValue as? String ?? ""
             }
         }
         
@@ -113,6 +126,30 @@ class SCTableViewController: SCBaseCodeViewController, NSTableViewDataSource,  N
         
         required init?(coder: NSCoder) {
             fatalError("init(coder:) has not been implemented")
+        }
+    }
+    
+    class SCColorTableRowView : NSTableRowView {
+        var selectionTextColor : NSColor = NSColor(white: 0.9, alpha: 1) {
+            didSet {
+                setNeedsDisplay(self.bounds)
+            }
+        }
+        var selectionBackgroundColor : NSColor = NSColor.blue {
+            didSet {
+                setNeedsDisplay(self.bounds)
+            }
+        }
+        
+        override func drawSelection(in dirtyRect: NSRect) {
+            if selectionHighlightStyle != .none {
+                let selectionRect = self.bounds.insetBy(dx: 1, dy: 1)
+                selectionTextColor.setStroke()
+                selectionBackgroundColor.setFill()
+                let path = NSBezierPath(rect: selectionRect)
+                path.fill()
+                path.stroke()
+            }
         }
     }
     
