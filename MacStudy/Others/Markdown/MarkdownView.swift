@@ -14,6 +14,7 @@ struct MarkdownView: View {
     let text : String
     var body: some View {
         MarkdownBaseView {
+//            Markdown(Document((text)))
             Markdown(text)
                 .markdownCodeSyntaxHighlighter(.splash(theme:self.theme))
                 .markdownImageProvider(DefaultImageProvider(urlSession: URLSessionManager.shared.session))

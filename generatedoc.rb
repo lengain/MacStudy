@@ -13,6 +13,7 @@ class SCCodeItem
   attr_accessor :code
   attr_accessor :filePath
   attr_accessor :className
+  attr_accessor :fileType
 
   def to_s
     s = super
@@ -28,7 +29,8 @@ class SCCodeItem
       "description": @description,
       "filePath": @filePath,
       "className": @className,
-      "index": @index
+      "index": @index,
+      "fileType":@fileType
     }
   end
 
@@ -101,49 +103,59 @@ class DocumentGenerator
 
   # @param [SCCodeItem] code_item
   def generate_code_markdown(code_item)
-    file_path = @document_dir + '/' + code_item.title + '.md'
-    f = File.new(file_path, "w+")
-    f.puts(code_item.code)
-    f.close
+    if code_item.code != nil
+      file_path = @document_dir + '/' + code_item.title + '.md'
+      f = File.new(file_path, "w+")
+      f.puts(code_item.code)
+      f.close
+    end
   end
 
   # @param [String] kit_dir_path
   def generate_code_array(kit_dir_path)
     code_item_array = Array.new
-    if File.exist?(kit_dir_path)
-      swift_file_type = ".swift"
-      Dir::entries(kit_dir_path).each do |swift_file|
-        if swift_file.end_with?(swift_file_type)
-          swift_file_path = kit_dir_path + '/' + swift_file
-          puts(swift_file_path)
-          begin
-            f = File.open(swift_file_path, "rb")
-            swift_code = f.read
-            f.close
-            code_item = handle_code(swift_code)
-            code_item.filePath = kit_dir_path + "/" + swift_file if code_item != nil
-            swift_file.slice!(swift_file_type)
-            code_item.className = swift_file if code_item != nil
-            code_item_array.push(code_item) if code_item != nil
-          end
-        end
-      end
-    end
+    insert_item_to_array(code_item_array, kit_dir_path)
     code_item_array
   end
 
-  # @param [String?] swift_code
-  def handle_code(swift_code)
+  def insert_item_to_array(code_item_array,kit_dir_path)
+    if File.exist?(kit_dir_path)
+      swift_file_type = ".swift"
+      md_file_type = ".md"
+      Dir::entries(kit_dir_path).each do |file_full_name|
+        file_path = kit_dir_path + '/' + file_full_name
+        if file_full_name.end_with?(swift_file_type) || file_full_name.end_with?(md_file_type)
+          puts(file_path)
+          begin
+            f = File.open(file_path, "rb")
+            file_content = f.read
+            f.close
+            code_item = handle_code(file_content, file_full_name)
+            code_item.filePath = kit_dir_path + "/" + file_full_name if code_item != nil
+            file_full_name.slice!(".#{code_item.fileType}")
+            code_item.className = file_full_name if code_item != nil
+            code_item_array.push(code_item) if code_item != nil
+          end
+        end
+        if file_full_name == "Base.lproj"
+          insert_item_to_array(code_item_array, file_path)
+        end
+      end
+    end
+  end
+
+  # @param [String?] file_content
+  def handle_code(file_content, file_full_name)
     code_item = SCCodeItem.new
     title_pattern = Regexp.new("/// title.+\n")
-    swift_code.match(title_pattern) do |data|
+    file_content.match(title_pattern) do |data|
       title = data.to_s
       title.slice!("/// title : ")
       code_item.title = title
     end
 
     index_pattern = Regexp.new("/// index.+\n")
-    swift_code.match(index_pattern) do |data|
+    file_content.match(index_pattern) do |data|
       index = data.to_s
       index.slice!("/// index : ")
       index.slice!("\n")
@@ -151,37 +163,36 @@ class DocumentGenerator
     end
 
     desc_pattern = Regexp.new("/// description.+\n")
-    swift_code.match(desc_pattern) do |data|
+    file_content.match(desc_pattern) do |data|
       desc = data.to_s
       desc.slice!("/// description : ")
       code_item.description = desc
     end
 
-    md = ""
-    md_pattern = Regexp.new("/\\* md[\\s\\S]*\\*/")
-    swift_code.match(md_pattern) do |data|
-      md = data.to_s
-      md.slice!("/* md")
-      md.slice!("*/")
-    end
+    code_item.fileType = file_full_name.split(".").last
+    if code_item.fileType == "swift"
+      md = ""
+      md_pattern = Regexp.new("/\\* md[\\s\\S]*\\*/")
+      file_content.match(md_pattern) do |data|
+        md = data.to_s
+        md.slice!("/* md")
+        md.slice!("*/")
+      end
 
-    code_pattern = Regexp.new("/// start[\\s\\S]*/// end")
-    swift_code.match(code_pattern) do |data|
-      code = data.to_s
-      code.slice!("/// start")
-      code.slice!("/// end")
+      code_pattern = Regexp.new("/// start[\\s\\S]*/// end")
+      file_content.match(code_pattern) do |data|
+        code = data.to_s
+        code.slice!("/// start")
+        code.slice!("/// end")
 
-      code_item.code = "
-  #{md}
+        code_item.code = "
+        #{md}
   ``` swift
   #{code}
   ```
 "
+      end
     end
-
-
-    code =
-
 
     code_item.title == nil ? nil : code_item
   end

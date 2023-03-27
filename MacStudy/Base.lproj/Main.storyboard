@@ -893,9 +893,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="78" horizontalPageScroll="10" verticalLineScroll="78" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nua-By-0Ad">
-                                <rect key="frame" x="0.0" y="0.0" width="130" height="274"/>
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="274"/>
                                 <clipView key="contentView" id="gb0-gg-qOS">
-                                    <rect key="frame" x="1" y="1" width="128" height="272"/>
+                                    <rect key="frame" x="1" y="1" width="108" height="272"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowHeight="78" rowSizeStyle="automatic" viewBased="YES" id="EOf-MU-gmb">
@@ -959,7 +959,7 @@
                                     </subviews>
                                 </clipView>
                                 <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="Vb3-Hw-neX">
-                                    <rect key="frame" x="1" y="257" width="128" height="16"/>
+                                    <rect key="frame" x="1" y="257" width="108" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="YI9-h7-i5m">
@@ -1054,7 +1054,7 @@
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="tCh-T4-YP0" firstAttribute="top" secondItem="YoT-uM-7Jm" secondAttribute="top" id="EMy-Ub-o0P"/>
+                            <constraint firstItem="tCh-T4-YP0" firstAttribute="top" secondItem="YoT-uM-7Jm" secondAttribute="top" id="LEO-91-AWn"/>
                             <constraint firstItem="tCh-T4-YP0" firstAttribute="leading" secondItem="YoT-uM-7Jm" secondAttribute="leading" id="S1t-Da-0r1"/>
                             <constraint firstAttribute="trailing" secondItem="tCh-T4-YP0" secondAttribute="trailing" id="tD9-8D-VHb"/>
                             <constraint firstAttribute="bottom" secondItem="tCh-T4-YP0" secondAttribute="bottom" id="u9r-rf-ebs"/>

@@ -16,7 +16,8 @@ class SCPageViewController: NSSplitViewController {
     }
 
     var codeViewController : SCCodeViewController  {
-        splitViewItems[1].viewController as! SCCodeViewController
+        let markdownIndex = splitViewItems.count == 1 ? 0 : 1
+        return splitViewItems[markdownIndex].viewController as! SCCodeViewController
     }
 
     override func viewDidLoad() {
@@ -38,11 +39,15 @@ class SCPageViewController: NSSplitViewController {
 
     func reloadData() {
         guard let listItem = item else { return }
-        let viewClass = classFromString(listItem.className) as! NSViewController.Type
-        let vc = viewClass.init(nibName:nil, bundle:nil)
-        let splitViewItem = NSSplitViewItem(viewController: vc)
-        removeSplitViewItem(splitViewItems[0])
-        insertSplitViewItem(splitViewItem, at: 0)
+        if splitViewItems.count == 2 {
+            removeSplitViewItem(splitViewItems[0])
+        }
+        if listItem.fileType == "swift" {
+            let viewClass = classFromString(listItem.className) as! NSViewController.Type
+            let vc = viewClass.init(nibName:nil, bundle:nil)
+            let splitViewItem = NSSplitViewItem(viewController: vc)
+            insertSplitViewItem(splitViewItem, at: 0)
+        }
         codeViewController.code = listItem.markdownCode()
     }
     

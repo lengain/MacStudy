@@ -7,7 +7,6 @@
 
 import Cocoa
 import SwiftUI
-
 class SCCodeViewController: NSViewController {
 
     @IBOutlet weak var scrollView: NSScrollView!
@@ -23,6 +22,14 @@ class SCCodeViewController: NSViewController {
         // Do view setup here.
     }
     
+    func updateScrollViewContraint() {
+        scrollView.snp.remakeConstraints { make in
+            make.top.equalToSuperview().offset(kTitlebarHeight)
+            make.left.bottom.right.equalToSuperview()
+            
+        }
+    }
+    
     func reloadData() {
         let subViews = scrollView.subviews
         subViews.forEach { subview in
@@ -32,10 +39,10 @@ class SCCodeViewController: NSViewController {
         }
         guard let codeString = code else { return }
         let hostingView = SCHostingView(rootView: MarkdownView(text: codeString))
-        hostingView.isUserInteractionEnabled = false
+        hostingView.isUserInteractionEnabled = true
         scrollView.documentView = hostingView
         hostingView.snp.makeConstraints { make in
-            make.width.greaterThanOrEqualToSuperview()
+            make.width.equalToSuperview()
         }
         hostingView.updateConstraints()
         hostingView.layout()

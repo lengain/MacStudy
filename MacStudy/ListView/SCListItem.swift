@@ -14,11 +14,18 @@ struct SCListItemData : Decodable, Encodable {
     var filePath : String
     var className : String
     var index : Int = 0
+    var fileType : String
     
     func markdownCode() -> String? {
         guard let fileURL = Bundle.main.url(forResource: "\(title)", withExtension: "md") else { return nil }
         do {
-            return try String(contentsOf: fileURL)
+            var md = try String(contentsOf: fileURL)
+            if #available(macOS 13.0, *) {
+                md = md.replacing(/(<!--[\s\S]*-->)/, with: "     ")
+            } else {
+                // Fallback on earlier versions
+            }
+            return md
         } catch {
             fatalError("Coundn't open \(fileURL)")
         }

@@ -32,7 +32,7 @@ class ViewController: NSWindowController  {
         
         sidebarViewController.delegate = self
         sidebarViewController.selectFirstKit()
-        
+                
     }
     
     
