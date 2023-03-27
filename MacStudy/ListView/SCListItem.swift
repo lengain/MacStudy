@@ -21,7 +21,7 @@ struct SCListItemData : Decodable, Encodable {
         do {
             var md = try String(contentsOf: fileURL)
             if #available(macOS 13.0, *) {
-                md = md.replacing(/(<!--[\s\S]*-->)/, with: "     ")
+                md = md.replacing(/(<!--[\s\S]*-->)/, with: "")
             } else {
                 // Fallback on earlier versions
             }

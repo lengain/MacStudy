@@ -20,13 +20,16 @@ class SCCodeViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        self.view.wantsLayer = true
+        self.view.layer?.backgroundColor = NSColor.white.cgColor
     }
     
     func updateScrollViewContraint() {
         scrollView.snp.remakeConstraints { make in
             make.top.equalToSuperview().offset(kTitlebarHeight)
-            make.left.bottom.right.equalToSuperview()
-            
+            make.bottom.equalToSuperview()
+            make.left.equalToSuperview().offset(20)
+            make.right.equalToSuperview().offset(-20)
         }
     }
     

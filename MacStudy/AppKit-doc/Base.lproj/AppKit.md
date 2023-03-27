@@ -13,6 +13,7 @@ AppKit contains
 This list shows how most views are used.
 
 Here is the inheritance diagram for the various views  
+
 ![img](https://raw.githubusercontent.com/lengain/MacStudy/main/MacStudy/Resources/Views.jpg)
 
 

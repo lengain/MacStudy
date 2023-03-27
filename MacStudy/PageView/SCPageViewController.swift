@@ -47,6 +47,8 @@ class SCPageViewController: NSSplitViewController {
             let vc = viewClass.init(nibName:nil, bundle:nil)
             let splitViewItem = NSSplitViewItem(viewController: vc)
             insertSplitViewItem(splitViewItem, at: 0)
+        }else {
+//            codeViewController.updateScrollViewContraint()
         }
         codeViewController.code = listItem.markdownCode()
     }

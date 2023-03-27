@@ -13,11 +13,15 @@ struct MarkdownView: View {
     @Environment(\.colorScheme) private var colorScheme
     let text : String
     var body: some View {
-        MarkdownBaseView {
-//            Markdown(Document((text)))
-            Markdown(text)
-                .markdownCodeSyntaxHighlighter(.splash(theme:self.theme))
-                .markdownImageProvider(DefaultImageProvider(urlSession: URLSessionManager.shared.session))
+        HStack {
+            Spacer(minLength: 15);
+            MarkdownBaseView {
+                //            Markdown(Document((text)))
+                Markdown(text)
+                    .markdownCodeSyntaxHighlighter(.splash(theme:self.theme))
+                    .markdownImageProvider(DefaultImageProvider(urlSession: URLSessionManager.shared.session))
+            }
+            Spacer(minLength: 15);
         }
     }
     
