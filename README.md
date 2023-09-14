@@ -2,7 +2,7 @@
 
 AppKit tutorials of Swift
 
-
+<img src="https://github.com/lengain/MacStudy/blob/main/screenshot01.png?raw=true" width="700" />
 
 ## Run
 
